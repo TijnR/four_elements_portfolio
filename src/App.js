@@ -1,11 +1,11 @@
 import './App.css';
 import { Route } from 'react-router-dom'
 
-import Home from './Pages/Home';
-import Tijn from './Pages/Tijn';
-import Barry from './Pages/Barry';
-import Kim from './Pages/Kim';
-import Justin from './Pages/Justin';
+import Home from './pages/Home';
+import Tijn from './pages/Tijn';
+import Barry from './pages/Barry';
+import Kim from './pages/Kim';
+import Justin from './pages/Justin';
 
 function App() {
   return (

@@ -1,9 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Title = styled.h1`
+color: green;
+`
 
 function Home() {
     return (
         <div>
-            Home
+           <Title>Eén portfolio.</Title>
         </div>
     )
 }
