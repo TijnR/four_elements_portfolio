@@ -3,9 +3,18 @@ import styled from 'styled-components'
 import { colors } from '../theme/colors';
 import { typography } from '../theme/typography';
 
+
+import { Logo } from '../assets/icons/Logo';
+import Navigation from '../components/organisms/Navigation';
+
 const Title = styled.h1`
     color: ${props => props.color || colors.background};
     font-size: ${typography.fontSizes.['6xl']};
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: ${typography.fontSizes.['3xl']};
+  }
 `
 
 const HeroPlaceHolder = styled.div`
@@ -28,10 +37,11 @@ const TextPlaceHolder = styled.div`
 
 function Home() {
     return (
-        <div>
+        <>
+           <Navigation activeIndex={0}/>
            <HeroPlaceHolder><Title color={colors.white}>Hero PlaceHolder</Title></HeroPlaceHolder>
            <TextPlaceHolder><Title>Text PlaceHolder</Title></TextPlaceHolder>
-        </div>
+        </>
     )
 }
 

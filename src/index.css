@@ -36,3 +36,12 @@ span, p {
   font-family: degular, sans-serif;
   font-style: normal;
 }
+
+span {
+  letter-spacing: 0.1rem;
+}
+
+
+a {
+  text-decoration: none;
+}
