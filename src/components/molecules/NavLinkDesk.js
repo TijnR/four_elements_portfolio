@@ -143,8 +143,10 @@ function NavLinkDesk({linkData, active, activeSubjectIndex, setDropOpen}) {
     })
 
     const handleMouseEvent = (open) => {
-        setDropDownOpen(open)
-        setDropOpen(open)
+        if(dropdownItems){
+            setDropDownOpen(open)
+            setDropOpen(open)
+        }
     }
 
 
