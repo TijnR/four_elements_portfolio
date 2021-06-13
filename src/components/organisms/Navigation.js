@@ -31,7 +31,9 @@ const NavContainer = Styled.nav`
 	z-index: -1;
     }
 
-    
+    @media (max-width: 1024px) {
+        padding: 20px 20px; 
+    }
 `
 
 const InnerNav = Styled.div`
@@ -99,7 +101,7 @@ const MobileBackground = Styled.div`
     flex-direction: column;
     overflow: none;
     padding: 0 ${container.paddingHMobile}px;
-    padding-top: 100px;
+    padding-top: 80px;
 
     @media (min-width: 769px) {
         display: none;  
