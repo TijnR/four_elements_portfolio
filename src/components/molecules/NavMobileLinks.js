@@ -22,7 +22,7 @@ const SContainer = Styled.div`
 `
 
 const MobileLink = Styled.span`
-    font-size: ${typography.fontSizes.['4xl']};
+    font-size: ${typography.fontSizes.['2xl']};
     color: ${colors.white};
     text-transform: uppercase;
     opacity: 0; 
