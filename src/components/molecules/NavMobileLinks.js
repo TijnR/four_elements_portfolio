@@ -26,7 +26,7 @@ const MobileLink = Styled.span`
     color: ${colors.white};
     text-transform: uppercase;
     opacity: 0; 
-    animation: ${props => props.open ? showUp : 'none' } 1s ${props => props.delay}s linear forwards;
+    animation: ${props => props.open ? showUp : 'none' } 600ms ${props => props.delay}s linear forwards;
 `
 
 const MobileLinkSmall = Styled.span`
@@ -34,7 +34,7 @@ const MobileLinkSmall = Styled.span`
     color: ${colors.white};
     padding: ${spacing.xxs} 0;
     opacity: 0; 
-    animation: ${props => props.open ? showUp : 'none' } 1s ${props => props.delay}s linear forwards;
+    animation: ${props => props.open ? showUp : 'none' } 600ms ${props => props.delay}s linear forwards;
 `
 const MobileGroup = Styled.div`
     padding: ${spacing.xs} 0;

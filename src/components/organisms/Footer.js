@@ -60,8 +60,6 @@ const MinorText = styled.h4`
 const ItemsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    min-width: 550px;
-    width: 550px;
 
     @media (min-width: 769px) {
         min-width: 550px;

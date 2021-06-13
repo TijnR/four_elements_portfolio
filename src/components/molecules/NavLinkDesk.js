@@ -1,10 +1,20 @@
 import React, { useState } from 'react'
-import Styled from 'styled-components'
+import Styled, {keyframes} from 'styled-components'
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 import { Link } from 'react-router-dom';
 import { ReactComponent as ReactLogo } from '../../assets/icons/chevron-down.svg'
+
+const showUp = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 const SContainer = Styled.div`
     display: inline-flex;
@@ -100,7 +110,9 @@ const DropDownLinks = Styled.span`
     padding: ${spacing.sm} 0;
     color: ${props => props.active ? colors.primary : colors.offWhite};
     transition: 300ms ease-out;
+    opacity: 0; 
     transition-property: color;
+    animation: ${props => props.open ? showUp : 'none' } 600ms ${props => props.delay}s linear forwards;
 
     :hover {
         color: ${colors.primary}
@@ -116,7 +128,7 @@ const DropDownIcon = Styled.div`
     align-items: center;
     svg {
         width: 12px;
-    height: 12px;
+        height: 12px;
     }
 `
 
@@ -128,15 +140,17 @@ function NavLinkDesk({linkData, active, activeSubjectIndex, setDropOpen}) {
     const [dropdownOpen, setDropDownOpen] = useState(false)
     const {to, name, dropdownItems} = linkData
 
+    
+
     const displayDropDownLinks = dropdownItems && dropdownItems.map((item, i) => {
         return activeSubjectIndex === i ? 
         <Link to={item.to} key={i}>
-            <DropDownLinks key={i} active>
+            <DropDownLinks open={dropdownOpen} delay={i / 5} key={i} active>
                 {item.name}
             </DropDownLinks>
         </Link> :
         <Link to={item.to} key={i}>   
-            <DropDownLinks key={i}>
+            <DropDownLinks open={dropdownOpen} delay={i / 5} key={i}>
                 {item.name}
             </DropDownLinks>
         </Link>
