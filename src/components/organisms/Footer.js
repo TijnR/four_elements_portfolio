@@ -203,7 +203,7 @@ function Footer() {
         bottom: 0;
 
         svg {
-            transform: rotate(292deg) translate3d(403px, 300px, 0);
+            transform: rotate(292deg) translate3d(403px, 500px, 0);
         }
     `
 
