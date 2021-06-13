@@ -6,6 +6,7 @@ import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { ReactComponent as ChevronUp } from '../../assets/icons/scroll-arrow-up.svg'
 import { ReactComponent as ChevronRight } from '../../assets/icons/circle-chevron-right.svg'
+import { ReactComponent as DopeLines } from '../../assets/icons/dope-lines.svg'
 import { spacing } from '../../theme/spacing';
 import { listItems } from '../../listItems';
 
@@ -16,6 +17,8 @@ const FootContainer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 `
 
 const FootInner = styled.div`
@@ -192,6 +195,18 @@ function Footer() {
         }
     })
 
+    const BackgroundLines = styled.div`
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        svg {
+            transform: rotate(292deg) translate3d(403px, 300px, 0);
+        }
+    `
+
 
     return (
         <FootContainer>
@@ -207,6 +222,7 @@ function Footer() {
                     </FootItemsContainer>
                     <ScrollIcon onClick={handleClickEvent}><ChevronUp/></ScrollIcon>
             </FootInner>
+            <BackgroundLines><DopeLines/></BackgroundLines>
         </FootContainer>
     )
 }
