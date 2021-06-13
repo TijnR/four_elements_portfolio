@@ -6,6 +6,7 @@ import { typography } from '../theme/typography';
 
 import { Logo } from '../assets/icons/Logo';
 import Navigation from '../components/organisms/Navigation';
+import Footer from '../components/organisms/Footer';
 
 const Title = styled.h1`
     color: ${props => props.color || colors.background};
@@ -41,6 +42,7 @@ function Home() {
            <Navigation activeIndex={0}/>
            <HeroPlaceHolder><Title color={colors.white}>Hero PlaceHolder</Title></HeroPlaceHolder>
            <TextPlaceHolder><Title>Text PlaceHolder</Title></TextPlaceHolder>
+           <Footer/>
         </>
     )
 }

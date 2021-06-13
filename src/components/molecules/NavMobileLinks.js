@@ -44,22 +44,19 @@ const MobileGroup = Styled.div`
 
 function NavMobileLinks({listData, open}) {
     const displayLinks = listData.map((item, index) => {
-        console.log(index);
         let displaySmallLinks
         if(item.dropdownItems) {
-                displaySmallLinks = item.dropdownItems?.map((item, i) => {
+                displaySmallLinks = item.dropdownItems.map((item, i) => {
                 return (
-                    <>
-                     <Link to={item.to} key={i + (index * 10)}>
+                     <Link to={item.to} key={i}>
                         <MobileLinkSmall open={open} delay={(index / 4) + (i / 20)}>{item.name}</MobileLinkSmall>
                     </Link>
-                    </>
                 )
             })
         }
         return (
             <MobileGroup key={index}>
-                <Link to={item.to} key={(index * 10) - 1}>
+                <Link to={item.to} key={-1}>
                     <MobileLink open={open} delay={(index / 4)} >{item.name}</MobileLink>
                 </Link>
                 {displaySmallLinks && displaySmallLinks}
