@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Logo } from '../../assets/icons/Logo';
 import { container } from '../../theme/container';
 import { Link } from 'react-router-dom';
 import { colors } from '../../theme/colors';
@@ -188,6 +187,8 @@ function Footer() {
                 {displaySubItems}
             </ListItemContainer>
         )
+        } else {
+            return null
         }
     })
 

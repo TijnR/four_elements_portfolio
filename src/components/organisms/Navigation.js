@@ -2,10 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Styled from 'styled-components'
 import { Logo } from '../../assets/icons/Logo';
 import { container } from '../../theme/container';
-import { Link } from 'react-router-dom';
 import { colors } from '../../theme/colors';
-import { typography } from '../../theme/typography';
-
 import NavLinkDesk from '../molecules/NavLinkDesk';
 import NavMobileLinks from '../molecules/NavMobileLinks';
 import { listItems } from '../../listItems';
