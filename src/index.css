@@ -18,6 +18,12 @@ body {
   overscroll-behavior: none;
 }
 
+@media only screen and (min-width: 769px) {
+  body {
+    overflow: auto !important;  
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -122,7 +122,9 @@ const DropDownIcon = Styled.div`
 
 
 
-function NavLinkDesk({linkData, active, activeSubjectIndex}) {
+
+
+function NavLinkDesk({linkData, active, activeSubjectIndex, setDropOpen}) {
     const [dropdownOpen, setDropDownOpen] = useState(false)
     const {to, name, dropdownItems} = linkData
 
@@ -140,11 +142,16 @@ function NavLinkDesk({linkData, active, activeSubjectIndex}) {
         </Link>
     })
 
+    const handleMouseEvent = (open) => {
+        setDropDownOpen(open)
+        setDropOpen(open)
+    }
+
 
 
     return (
-        <SContainer onMouseEnter={() => setDropDownOpen(true)}
-        onMouseLeave={() => setDropDownOpen(false)} >
+        <SContainer onMouseEnter={() => handleMouseEvent(true)}
+        onMouseLeave={() => handleMouseEvent(false)} >
             <Link to={to}>
                 <NavItemDesk  active={active}>
                 {name}
