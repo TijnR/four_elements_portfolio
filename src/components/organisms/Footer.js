@@ -6,7 +6,6 @@ import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { ReactComponent as ChevronUp } from '../../assets/icons/scroll-arrow-up.svg'
 import { ReactComponent as ChevronRight } from '../../assets/icons/circle-chevron-right.svg'
-import { ReactComponent as DopeLines } from '../../assets/icons/dope-lines.svg'
 import { spacing } from '../../theme/spacing';
 import { listItems } from '../../listItems';
 
@@ -223,7 +222,6 @@ function Footer() {
                     </FootItemsContainer>
                     <ScrollIcon onClick={handleClickEvent}><ChevronUp/></ScrollIcon>
             </FootInner>
-            <BackgroundLines><DopeLines/></BackgroundLines>
         </FootContainer>
     )
 }

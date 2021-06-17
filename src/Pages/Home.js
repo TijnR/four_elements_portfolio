@@ -2,11 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../theme/colors';
 import { typography } from '../theme/typography';
-
-
 import { Logo } from '../assets/icons/Logo';
 import Navigation from '../components/organisms/Navigation';
 import Footer from '../components/organisms/Footer';
+import HeroHome from '../components/organisms/HeroHome';
 
 const Title = styled.h1`
     color: ${props => props.color || colors.background};
@@ -40,7 +39,7 @@ function Home() {
     return (
         <>
            <Navigation activeIndex={0}/>
-           <HeroPlaceHolder><Title color={colors.white}>Hero PlaceHolder</Title></HeroPlaceHolder>
+           <HeroHome/>
            <TextPlaceHolder><Title>Text PlaceHolder</Title></TextPlaceHolder>
            <Footer/>
         </>
