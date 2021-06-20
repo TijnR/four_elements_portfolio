@@ -6,6 +6,7 @@ import { Logo } from '../assets/icons/Logo';
 import Navigation from '../components/organisms/Navigation';
 import Footer from '../components/organisms/Footer';
 import HeroHome from '../components/organisms/HeroHome';
+import TextHighway from '../components/organisms/TextHighway';
 
 const Title = styled.h1`
     color: ${props => props.color || colors.background};
@@ -15,15 +16,6 @@ const Title = styled.h1`
     @media (max-width: 768px) {
         font-size: ${typography.fontSizes.['3xl']};
   }
-`
-
-const HeroPlaceHolder = styled.div`
-    height: 100vh;
-    width: 100%;
-    background-color: ${colors.background};
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `
 
 const TextPlaceHolder = styled.div`
@@ -40,6 +32,7 @@ function Home() {
         <>
            <Navigation activeIndex={0}/>
            <HeroHome/>
+           <TextHighway/>
            <TextPlaceHolder><Title>Text PlaceHolder</Title></TextPlaceHolder>
            <Footer/>
         </>

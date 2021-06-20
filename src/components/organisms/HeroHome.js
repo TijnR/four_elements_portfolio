@@ -70,7 +70,11 @@ const HeroSvgContainer = styled.div`
     right: 0;
     position: absolute;
     height: 100%;  
-    display: ${props => props.activeImageIndex === props.id ? 'inherit' : 'none'};
+    transition: 300ms ease-out;
+    transition-property: opacity;
+    /* display: ${props => props.activeImageIndex === props.id ? 'inherit' : 'none'}; */
+    opacity: ${props => props.activeImageIndex === props.id ? 1 : 0};
+    pointer-events: none;
 
     @media (max-width: 768px) {
        display: none
@@ -114,10 +118,10 @@ const HeroMedia = styled.img`
     object-position: 40% 80%;
     filter: brightness(0.8);
     position: absolute; 
-    /* display: ${props => props.activeImageIndex === props.id ? 'inherit' : 'none'}; */
     transition: 300ms ease-out;
     transition-property: opacity;
     opacity: ${props => props.activeImageIndex === props.id ? 1 : 0};
+    pointer-events: none;
 `
 
 
@@ -129,8 +133,6 @@ function HeroHome() {
     const handleHover = (i) => {
         setActiveImageIndex(i)
     }
-
-    console.log(activeImageIndex)
 
     return (
         <HeroContainer>
@@ -153,8 +155,8 @@ function HeroHome() {
         
             <HeroScrollButton/>
             </HeroInner>
-            <HeroSvgContainer>
-                <VLines activeImageIndex={activeImageIndex} id={0}/>
+            <HeroSvgContainer activeImageIndex={activeImageIndex} id={0}>
+                <VLines/>
             </HeroSvgContainer>
             <HeroMediaContainer>
                 <HeroInnerMedia>
