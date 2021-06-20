@@ -1,30 +1,169 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components';
 import HeroContainer from '../template/HeroContainer';
 import { container } from '../../theme/container';
 import HeroScrollButton from '../molecules/HeroScrollButton';
+import { colors } from '../../theme/colors';
+import { typography } from '../../theme/typography';
+import { spacing } from '../../theme/spacing';
+import { HomeLinkItem } from '../atoms/LinkItem';
+import { ReactComponent as VLines } from '../../assets/icons/v-lines.svg'
+import barrySample from '../../assets/images/barry-sample.jpg'
+import justinSample from '../../assets/images/justin-sample.jpg'
+import kimSample from '../../assets/images/kim-sample.jpg'
+import tijnSample from '../../assets/images/tijn-sample.jpg'
+
+
 
 const HeroInner = styled.div`
     max-width: ${container.maxWidth}px;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     position: relative;
-    border: 1px dotted green;
+`
+
+const HeroTextInner = styled.div`
+    max-width: ${container.maxWidthText}px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+`
+
+const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+
+`
+
+const UpperHeader = styled.h3`
+    color: ${colors.primary};
+    font-size: ${typography.fontSizes.topHeader};
+    text-transform: uppercase;
+    margin: 0;
+`
+
+const Header = styled.h1`
+    color: ${colors.white};
+    font-size: ${typography.fontSizes.header};
+    line-height: 1.3;
+    margin: ${spacing.md} 0;
+
+    span {
+        color: ${colors.primary}
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+`
+
+const LinksContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+const HeroSvgContainer = styled.div`
+    width: 63%;
+    right: 0;
+    position: absolute;
+    height: 100%;  
+    display: ${props => props.activeImageIndex === props.id ? 'inherit' : 'none'};
+
+    @media (max-width: 768px) {
+       display: none
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+        transform: scale3d(1.6, 1.6, 1.5);
+        transform-origin: left; 
+        opacity: 0.8;
+
+        g{
+           height: 100%;
+           width: 100%;
+        }
+    }
+`
+
+const HeroMediaContainer = styled.div`
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 40% 100%);
+
+    @media (max-width: 768px) {
+       display: none
+    }
+`
+
+const HeroInnerMedia = styled.div`
+    position: relative;
+    height: 100%;
+    width: 100%;
+`
+
+const HeroMedia = styled.img`
+    height: 100%;
+    /* object-fit: cover; */
+    object-position: 40% 80%;
+    filter: brightness(0.8);
+    position: absolute; 
+    /* display: ${props => props.activeImageIndex === props.id ? 'inherit' : 'none'}; */
+    transition: 300ms ease-out;
+    transition-property: opacity;
+    opacity: ${props => props.activeImageIndex === props.id ? 1 : 0};
 `
 
 
 
 
 function HeroHome() {    
+    const [activeImageIndex, setActiveImageIndex] = useState(0)
+
+    const handleHover = (i) => {
+        setActiveImageIndex(i)
+    }
+
+    console.log(activeImageIndex)
+
     return (
         <HeroContainer>
             <HeroInner>
-            <h1>Hero</h1>
+            <HeroTextInner>
+                <TextContainer>
+                    <UpperHeader>Four Elements</UpperHeader>
+                    <Header>Eén portfolio<span>.</span><br></br>
+                    Vier Studenten<span>.</span><br></br>
+                    Twaalf leerdoelen<span>.</span>
+                    </Header>
+                    <LinksContainer>
+                        <HomeLinkItem setActiveImageIndex={handleHover} index={1} to={'/barry'} underline>Barry Boogert</HomeLinkItem>
+                        <HomeLinkItem setActiveImageIndex={handleHover} index={2} to={'/justin'} underline>Justin van Wijk</HomeLinkItem>
+                        <HomeLinkItem setActiveImageIndex={handleHover} index={3} to={'/kim'} underline>Kim van der Waart</HomeLinkItem>
+                        <HomeLinkItem setActiveImageIndex={handleHover} index={4} to={'/tijn'} underline>Tijn Roozen</HomeLinkItem>
+                    </LinksContainer>
+                </TextContainer>
+            </HeroTextInner>
         
             <HeroScrollButton/>
             </HeroInner>
+            <HeroSvgContainer>
+                <VLines activeImageIndex={activeImageIndex} id={0}/>
+            </HeroSvgContainer>
+            <HeroMediaContainer>
+                <HeroInnerMedia>
+                    <HeroMedia activeImageIndex={activeImageIndex} id={1} src={barrySample}/>
+                    <HeroMedia activeImageIndex={activeImageIndex} id={2} src={justinSample}/>
+                        <HeroMedia activeImageIndex={activeImageIndex} id={3} src={kimSample}/>
+                    <HeroMedia activeImageIndex={activeImageIndex} id={4} src={tijnSample}/>
+                </HeroInnerMedia>
+            </HeroMediaContainer>
         
         </HeroContainer>
     )

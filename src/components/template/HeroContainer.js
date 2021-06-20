@@ -10,6 +10,8 @@ const SHeroContainer = styled.section`
     padding: ${container.paddingV}px ${container.paddingH}px;
     display: grid;
     place-items: center;
+    position: relative;
+    overflow: hidden;
 
     @media (max-width: 768px) {
         padding: ${container.paddingVMobile} ${container.paddingHMobile};

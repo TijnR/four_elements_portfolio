@@ -27,6 +27,7 @@ const goDown = keyframes`
 
 const Container = styled.button`
     position: absolute;
+    z-index: 9;
     display: flex;
     align-items: center;
     bottom: -95px;
@@ -38,7 +39,7 @@ const Container = styled.button`
     :hover {
         div {
             div {
-                animation: ${goDown} 2500ms ease-out infinite;
+                animation: ${goDown} 1500ms cubic-bezier(1, 0, 0, 1) infinite;
             }
         }
     }
