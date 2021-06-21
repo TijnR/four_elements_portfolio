@@ -136,6 +136,7 @@ function Navigation({activeIndex, activeSubjectIndex}) {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+        handleScroll()
     });
 
     useEffect(() => {

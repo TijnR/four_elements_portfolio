@@ -16,8 +16,26 @@ export const listItems = [
         {to: '/kim/abstract-background-animation', name: 'Abstract Background Animation'}
     ]}, 
     {to: '/tijn', name: 'tijn', dropdownItems: [
-        {to: '/tijn/react-typescript', name: 'Web - 3D'},
-        {to: '/tijn/ios-development', name: 'Phaser.js'},
+        {to: '/tijn/react-typescript', name: 'react & typescript'},
+        {to: '/tijn/ios-development', name: 'IOS Developement'},
         {to: '/tijn/threejs-react', name: 'Three.js & React-Three-Fiber'}
     ]}
+]
+
+export const listProjects = [
+    {name: "barry boogert", projectName: "Grafisch ontwerp", to: '/barry/grafisch-ontwerp', img: 1},
+    {name: "justin van wijk", projectName: "Web - 3D", to: '/justin/web-3D', img: 4},
+    {name: "kim van der waart", projectName: "Visual Identity", to: '/kim/visual-identity', img: 7},
+    {name: "tijn roozen", projectName: "react & typescript", to: '/tijn/react-typescript', img: 10},
+
+    {name: "barry boogert", projectName: "Grafisch ontwerp", to: '/barry/grafisch-ontwerp', img: 2},
+    {name: "justin van wijk", projectName: "Web - 3D", to: '/justin/web-3D', img: 5},
+    {name: "kim van der waart", projectName: "Visual Identity", to: '/kim/visual-identity', img: 8},
+    {name: "tijn roozen", projectName: "react & typescript", to: '/tijn/react-typescript', img: 11},
+
+    {name: "barry boogert", projectName: "Grafisch ontwerp", to: '/barry/grafisch-ontwerp', img: 3},
+    {name: "justin van wijk", projectName: "Web - 3D", to: '/justin/web-3D', img: 6},
+    {name: "kim van der waart", projectName: "Visual Identity", to: '/kim/visual-identity', img: 9},
+    {name: "tijn roozen", projectName: "React & Typescript", to: '/tijn/react-typescript', img: 12},
+
 ]

@@ -7,6 +7,8 @@ import Navigation from '../components/organisms/Navigation';
 import Footer from '../components/organisms/Footer';
 import HeroHome from '../components/organisms/HeroHome';
 import TextHighway from '../components/organisms/TextHighway';
+import HeroTextContainer from '../components/molecules/HeroTextContainer';
+import ProjectCarousel from '../components/organisms/ProjectCarousel';
 
 const Title = styled.h1`
     color: ${props => props.color || colors.background};
@@ -18,22 +20,14 @@ const Title = styled.h1`
   }
 `
 
-const TextPlaceHolder = styled.div`
-    height: 100vh;
-    width: 100%;
-    background-color: ${colors.white};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
 function Home() {
     return (
         <>
            <Navigation activeIndex={0}/>
            <HeroHome/>
            <TextHighway/>
-           <TextPlaceHolder><Title>Text PlaceHolder</Title></TextPlaceHolder>
+           <HeroTextContainer/>
+           <ProjectCarousel/>
            <Footer/>
         </>
     )
