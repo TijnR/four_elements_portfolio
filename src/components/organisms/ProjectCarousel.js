@@ -5,7 +5,7 @@ import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 import ProjectItem from '../molecules/ProjectItem';
-import {listProjects} from '../../listItems'
+import {listProjects} from '../../data/listItems'
 
 import { ReactComponent as ChevronRight } from '../../assets/icons/chevron-right.svg'
 import { ReactComponent as ChevronLeft } from '../../assets/icons/chevron-left.svg'

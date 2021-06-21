@@ -7,7 +7,7 @@ import { typography } from '../../theme/typography';
 import { ReactComponent as ChevronUp } from '../../assets/icons/scroll-arrow-up.svg'
 import { ReactComponent as ChevronRight } from '../../assets/icons/circle-chevron-right.svg'
 import { spacing } from '../../theme/spacing';
-import { listItems } from '../../listItems';
+import { listItems } from '../../data/listItems';
 
 const FootContainer = styled.footer`
     padding: 40px ${container.paddingH}px;

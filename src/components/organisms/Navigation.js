@@ -5,7 +5,7 @@ import { container } from '../../theme/container';
 import { colors } from '../../theme/colors';
 import NavLinkDesk from '../molecules/NavLinkDesk';
 import NavMobileLinks from '../molecules/NavMobileLinks';
-import { listItems } from '../../listItems';
+import { listItems } from '../../data/listItems';
 
 const NavContainer = Styled.nav`
     width: 100%;
