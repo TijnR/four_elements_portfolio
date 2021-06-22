@@ -8,6 +8,7 @@ import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 import LinkItem from '../atoms/LinkItem';
 import { HeroInner, HeroTextInner, TextContainer, UpperHeader, Header, LinksContainer } from './Hero';
+import CanvasPerson from './persondotted/CanvasPerson';
 
 
 const PersonalText = styled.p`
@@ -18,10 +19,19 @@ const PersonalText = styled.p`
     max-width: 550px;
 `
 
+const PersonCanvasContainer = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+    border: 1px dotted green;
+`
+
 function PersonalHero({prof, name, text, leerdoelen}) {
 
-    const displayLinks = leerdoelen.map((l) => {
-        return(<LinkItem arrow="right" to={l.to} underline>{l.name}</LinkItem>)
+    const displayLinks = leerdoelen.map((l,i) => {
+        return(<LinkItem key={i} arrow="right" to={l.to} underline>{l.name}</LinkItem>)
     })
 
     return (
@@ -41,6 +51,10 @@ function PersonalHero({prof, name, text, leerdoelen}) {
     
         <HeroScrollButton/>
         </HeroInner>
+
+        <PersonCanvasContainer>
+            <CanvasPerson/>
+        </PersonCanvasContainer>
     </HeroContainer>
     )
 }

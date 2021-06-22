@@ -9,6 +9,7 @@ import { ReactComponent as ChevronLeft } from '../../assets/icons/chevron-left.s
 
 const LinkContainer = styled.div`
     display: inline-flex;
+    z-index: 5;
     border-bottom: 2px solid ${props => props.underline ?  colors.primary : 'none'};
     margin: ${spacing.xxxs} 0;
     align-items: center;
@@ -55,7 +56,7 @@ const IconContainer = styled.div`
 function LinkItem({to, children, arrow, underline}) {
     if(arrow === "right") {
         return (
-        <Link to={to}>
+        <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
                 <LinkText>{children}</LinkText>
                 <IconContainer style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
@@ -63,7 +64,7 @@ function LinkItem({to, children, arrow, underline}) {
         </Link>)
     } else if (arrow === "left") {
         return ( 
-        <Link to={to}>
+        <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
                 <IconContainer style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
                 <LinkText>{children}</LinkText>
@@ -71,7 +72,7 @@ function LinkItem({to, children, arrow, underline}) {
         </Link>)
     } else {
         return (
-            <Link to={to}>
+            <Link to={to} style={{zIndex: 5}}>
                 <LinkContainer underline={underline}>
                 <LinkText>{children}</LinkText>
                 </LinkContainer>
