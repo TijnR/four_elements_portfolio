@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import TouchTexture from './TouchTexture';
 import { TweenLite } from 'gsap/TweenMax';
 import sampleTijn from '../images/sample-77.jpg';
-import sampleKim from '../images/sample-kim.jpg'
+import sampleKim from '../images/sample-kim2.jpg'
 import sampleJustin from '../images/sample-justin.jpg'
 import sampleBarry from '../images/sample-barry.jpg'
 

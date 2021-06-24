@@ -14,21 +14,26 @@ const TextContainer = styled.div`
 
 const TextTitle = styled.h4`
     font-size: ${typography.fontSizes.md};
+    font-weight: ${typography.fontWeights.extrabold};
     margin: ${spacing.sm} 0;
+`
+
+const TextPara = styled.p`
+    line-height: ${spacing.lg};
 `
 
 
 function HeroTextContainer() {
     return (
-        <Container pv={20}>
+        <Container pv={40}>
             <InnerTextContainer>
                 <TextContainer>
                     <TextTitle>LEREN. ONTWIKKELEN. TOEPASSEN.</TextTitle>
-                    <p>
+                    <TextPara>
                     Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten 
 uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieken in een bepaald onderwerp te verbreden. Met behulp van de opgedane kennis staan de studenten sterker in hun schoenen en zijn zij beter voorbereid om een toegevoegde 
 waarde te leveren aan hun toekomstige collega’s.
-                    </p>
+                    </TextPara>
                 </TextContainer>
             </InnerTextContainer>
         </Container>

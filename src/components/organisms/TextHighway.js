@@ -3,6 +3,7 @@ import styled, {keyframes} from 'styled-components'
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
+import { container } from '../../theme/container';
 
 const slide = keyframes`
     0% {
@@ -45,7 +46,7 @@ const SContainer = styled.section`
     padding: ${spacing.xxxl};
     display: flex;
     flex-direction: column;
-    padding: 40px 0;
+    padding: ${container.paddingV}px 0;
     overflow: hidden;
 `
 
