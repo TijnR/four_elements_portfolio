@@ -138,18 +138,16 @@ const DropDownIcon = Styled.div`
 
 function NavLinkDesk({linkData, active, activeSubjectIndex, setDropOpen}) {
     const [dropdownOpen, setDropDownOpen] = useState(false)
-    const {to, name, dropdownItems} = linkData
-
-    
+    const {to, name, dropdownItems} = linkData    
 
     const displayDropDownLinks = dropdownItems && dropdownItems.map((item, i) => {
         return activeSubjectIndex === i ? 
-        <Link to={item.to} key={i}>
+        <Link key={i}>
             <DropDownLinks open={dropdownOpen} delay={i / 5} key={i} active>
                 {item.name}
             </DropDownLinks>
         </Link> :
-        <Link to={item.to} key={i}>   
+        <Link key={i}>   
             <DropDownLinks open={dropdownOpen} delay={i / 5} key={i}>
                 {item.name}
             </DropDownLinks>

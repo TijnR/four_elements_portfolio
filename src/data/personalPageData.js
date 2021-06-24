@@ -3,9 +3,9 @@ export const barryPersonal = {
     prof: 'Visuel Designer',
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
-        {to: '/barry/grafisch-ontwerp', name: 'Grafisch ontwerp'},
-        {to: '/barry/webdesign', name: 'Webdesign'},
-        {to: '/barry/UXUI', name: 'UX/UI'}
+        {to: '/barry/grafisch-ontwerp', name: 'Grafisch ontwerp', img: 1},
+        {to: '/barry/webdesign', name: 'Webdesign', img: 2},
+        {to: '/barry/UXUI', name: 'UX/UI', img: 3}
     ]
 }
 
@@ -14,9 +14,9 @@ export const justinPersonal = {
     prof: 'UX & Visuel Designer',
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
-        {to: '/justin/web-3D', name: 'Web - 3D'},
-        {to: '/justin/phaserjs', name: 'Phaser.js'},
-        {to: '/justin/automotive-design', name: 'Automotive Design'}
+        {to: '/justin/web-3D', name: 'Web - 3D', img: 4},
+        {to: '/justin/phaserjs', name: 'Phaser.js', img: 5},
+        {to: '/justin/automotive-design', name: 'Automotive Design', img: 6}
     ]
 }
 
@@ -25,9 +25,9 @@ export const kimPersonal = {
     prof: 'Visuel Designer',
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
-        {to: '/kim/visual-identity', name: 'Visual Identity'},
-        {to: '/kim/hand-lettering', name: 'Hand Lettering'},
-        {to: '/kim/abstract-background-animation', name: 'Abstract Background Animation'}
+        {to: '/kim/visual-identity', name: 'Visual Identity', img: 7},
+        {to: '/kim/hand-lettering', name: 'Hand Lettering', img: 8},
+        {to: '/kim/abstract-background-animation', name: 'Abstract Background Animation', img: 9}
     ]
 }
 
@@ -36,8 +36,8 @@ export const tijnPersonal = {
     prof: 'Frontend Developer',
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
-        {to: '/tijn/react-typescript', name: 'react & typescript'},
-        {to: '/tijn/ios-development', name: 'IOS Developement'},
-        {to: '/tijn/threejs-react', name: 'Three.js & React-Three-Fiber'}
+        {to: '/tijn/react-typescript', name: 'react & typescript', img: 10},
+        {to: '/tijn/ios-development', name: 'IOS Developement', img: 11},
+        {to: '/tijn/threejs-react', name: 'Three.js & React-Three-Fiber', img: 12}
     ]
 }

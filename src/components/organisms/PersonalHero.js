@@ -25,13 +25,12 @@ const PersonCanvasContainer = styled.div`
     height: 100%;
     right: 0;
     z-index: 1;
-    border: 1px dotted green;
 `
 
-function PersonalHero({prof, name, text, leerdoelen}) {
+function PersonalHero({prof, name, text, leerdoelen, person}) {
 
     const displayLinks = leerdoelen.map((l,i) => {
-        return(<LinkItem key={i} arrow="right" to={l.to} underline>{l.name}</LinkItem>)
+        return(<LinkItem size="big" key={i} arrow="right" to={l.to} underline>{l.name}</LinkItem>)
     })
 
     return (
@@ -53,7 +52,7 @@ function PersonalHero({prof, name, text, leerdoelen}) {
         </HeroInner>
 
         <PersonCanvasContainer>
-            <CanvasPerson/>
+            <CanvasPerson person={person}/>
         </PersonCanvasContainer>
     </HeroContainer>
     )

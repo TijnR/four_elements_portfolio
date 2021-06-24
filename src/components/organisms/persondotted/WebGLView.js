@@ -25,8 +25,9 @@ export default class WebGLView {
 		this.initThree();
 		this.initParticles();
 		this.initControls();
+		this.first = true
 
-		const rnd = ~~(Math.random() * this.samples.length);
+		// const rnd = ~~(Math.random() * this.samples.length);
 		this.goto(6);
 	}
 
@@ -68,22 +69,33 @@ export default class WebGLView {
 		this.renderer.render(this.scene, this.camera);
 	}
 
+	distroy() {
+		this.particles.hide(true)
+	}
+
 
 	//selects image
 	goto(index) {
 		console.log(this.samples[index])
 		// init next
-		if (this.currSample == null) this.particles.init(this.samples[index]);
+		console.log(this.particles)
+		// if (this.particles === undefined) this.particles.init(this.samples[index]);
 		
+		if(this.first) {
+			this.particles.init(this.samples[index]);
+		}
 		// hide curr then init next
 		else {
-			console.log('no')
 			this.particles.hide(true).then(() => {
 				this.particles.init(this.samples[index]);
 			});
+			this.first = false
 		}
 
+		this.first = false
+		
 		this.currSample = index;
+		console.log(this.currSample)
 	}
 
 	// next() {

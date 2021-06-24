@@ -1,6 +1,7 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useState, useRef, useEffect, useLocation, useContext} from 'react'
 import styled from 'styled-components'
 import WebGLView from './WebGLView';
+import { useHistory } from 'react-router-dom'
 
 class App {
 
@@ -53,6 +54,10 @@ class App {
 		// if (this.gui.stats) this.gui.stats.end();
 	}
 
+	distroy() {
+		if (this.webgl) this.webgl.distroy();
+	}
+
 	// ---------------------------------------------------------------------------------------------
 	// EVENT HANDLERS
 	// ---------------------------------------------------------------------------------------------
@@ -75,16 +80,24 @@ const SCanvas = styled.div`
    }
 `
 
-function CanvasPerson() {
-    const canvas = useRef(null)
+function CanvasPerson({person}) {
+
+	const canvas = useRef(null)
+	 const history = useHistory() 
 
     useEffect(() => {
         window.app = new App();
-	    window.app.init();
-    }, [])
+		window.app.init();
+	}, [canvas])
 
+	useEffect(() => {
+		return () => {
+			window.app.distroy()
+		}
+	}, [])
+	
     return (
-        <SCanvas ref={canvas} className="container">
+        <SCanvas ref={canvas} className={`container ${person}`}>
         </SCanvas>
     )
 }

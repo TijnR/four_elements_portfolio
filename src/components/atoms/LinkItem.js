@@ -27,7 +27,7 @@ const LinkContainer = styled.div`
 `
 
 const LinkText = styled.span`
- font-size: ${typography.fontSizes.xl};
+ font-size: ${props => props.size === "big" ? typography.fontSizes.xl : typography.fontSizes.md};
  font-family: ${typography.fonts.heading};
  font-weight: ${typography.fontWeights.extrabold};
  letter-spacing: normal;
@@ -39,42 +39,42 @@ const LinkText = styled.span`
 `
 
 const IconContainer = styled.div`
-    width: 10px;
-    height: 15px;
+    width: ${props => props.size === "big" ? "10px" : "8px"};
+    height: ${props => props.size === "big" ? "15px" : "12px"};
     display: flex;
     justify-content: center;
     align-items: center;
 
     svg {
-        width: 10px;
-        height: 15px;
+        width: ${props => props.size === "big" ? "10px" : "8px"};
+        height: ${props => props.size === "big" ? "15px" : "12px"};
         transition: 300ms ease-out;
         transition-property: transform;
     }
 `
 
-function LinkItem({to, children, arrow, underline}) {
+function LinkItem({to, children, arrow, underline, size}) {
     if(arrow === "right") {
         return (
         <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
-                <LinkText>{children}</LinkText>
-                <IconContainer style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
+                <LinkText size={size}>{children}</LinkText>
+                <IconContainer size={size} style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
             </LinkContainer>
         </Link>)
     } else if (arrow === "left") {
         return ( 
         <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
-                <IconContainer style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
-                <LinkText>{children}</LinkText>
+                <IconContainer size={size} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
+                <LinkText size={size}>{children}</LinkText>
             </LinkContainer>
         </Link>)
     } else {
         return (
             <Link to={to} style={{zIndex: 5}}>
-                <LinkContainer underline={underline}>
-                <LinkText>{children}</LinkText>
+                <LinkContainer size={size} underline={underline}>
+                <LinkText size={size}>{children}</LinkText>
                 </LinkContainer>
             </Link>
         )

@@ -1,8 +1,10 @@
 import * as THREE from 'three';
 import TouchTexture from './TouchTexture';
 import { TweenLite } from 'gsap/TweenMax';
-import sample from '../images/sample-77.jpg';
-
+import sampleTijn from '../images/sample-77.jpg';
+import sampleKim from '../images/sample-kim.jpg'
+import sampleJustin from '../images/sample-justin.jpg'
+import sampleBarry from '../images/sample-barry.jpg'
 
 const glslify = require('glslify');
 
@@ -191,11 +193,23 @@ export default class Particles {
 	}
 
 	init(src) {
-		const loader = new THREE.TextureLoader();
-		console.log(sample)
+		let imgToPerson
 
-		loader.load(sample, (texture) => {
-			console.log(texture)
+		if(window.location.pathname === '/tijn') {
+			imgToPerson = sampleTijn
+		} else if (window.location.pathname === '/kim') {
+			imgToPerson = sampleKim
+		} else if (window.location.pathname === '/barry') {
+			imgToPerson = sampleBarry
+		} else if (window.location.pathname === '/justin') {
+			imgToPerson = sampleJustin
+		} else {
+			imgToPerson = sampleTijn
+		}
+
+		const loader = new THREE.TextureLoader();
+
+		loader.load(imgToPerson, (texture) => {
 			this.texture = texture;
 			this.texture.minFilter = THREE.LinearFilter;
 			this.texture.magFilter = THREE.LinearFilter;
@@ -271,9 +285,7 @@ export default class Particles {
 			// blending: THREE.AdditiveBlending
 		});
 
-		setTimeout(() => {
-			console.log(material)
-		}, 2000)
+		
 		
 
 		const geometry = new THREE.InstancedBufferGeometry();
@@ -337,13 +349,11 @@ export default class Particles {
 	}
 
 	addListeners() {
-		console.log('listen')
 		this.handlerInteractiveMove = this.onInteractiveMove.bind(this);
 
 		this.webgl.interactive.addListener('interactive-move', this.handlerInteractiveMove);
 		this.webgl.interactive.objects.push(this.hitArea);
 		this.webgl.interactive.enable();
-		console.log('listen end')
 	}
 
 	removeListeners() {
@@ -366,7 +376,6 @@ export default class Particles {
 	}
 
 	show(time = 1.0) {
-		console.log('show')
 		// reset
 		TweenLite.fromTo(this.object3D.material.uniforms.uSize, time, { value: 0.5 }, { value: 1.5 });
 		TweenLite.to(this.object3D.material.uniforms.uRandom, time, { value: 2.0 });
@@ -374,7 +383,6 @@ export default class Particles {
 
 		
 		this.addListeners();
-		console.log('show end')
 	}
 
 	hide(_destroy, time = 0.8) {
