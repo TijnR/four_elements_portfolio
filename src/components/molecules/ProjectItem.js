@@ -4,10 +4,12 @@ import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 
-import barrySample from '../../assets/images/barry-sample.jpg'
-import justinSample from '../../assets/images/justin-sample.jpg'
-import kimSample from '../../assets/images/kim-sample.jpg'
-import tijnSample from '../../assets/images/tijn-sample.jpg'
+import barrySample from '../../assets/images/barry/barry-sample.jpg'
+import justinSample from '../../assets/images/justin/justin-sample.jpg'
+import kim1 from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
+import kim2 from '../../assets/images/kim/leerdoelB/digital-wordmark.jpg'
+import kimSample from '../../assets/images/kim/kim-sample.jpg'
+import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
 import { Link } from 'react-router-dom';
 
 const SContainer = styled.div`
@@ -106,10 +108,10 @@ function ProjectItem({name, projectName, img, to}) {
         source = justinSample
         break;
         case 7: 
-        source = kimSample
+        source = kim1
         break;
         case 8: 
-        source = kimSample
+        source = kim2
         break;
         case 9: 
         source = kimSample

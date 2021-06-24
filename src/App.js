@@ -7,6 +7,7 @@ import Barry from './pages/Barry';
 import Kim from './pages/Kim';
 import Justin from './pages/Justin';
 import ScrollToTop from './ScrollToTop';
+import VisualIdentity from './pages/VisualIdentity';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/tijn" component={Tijn} />
       <Route exact path="/barry" component={Barry} />
       <Route exact path="/kim" component={Kim} />
+      <Route exact path="/kim/visual-identity" component={VisualIdentity} />
       <Route exact path="/justin" component={Justin} />
     
     </div>

@@ -8,10 +8,10 @@ import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 import { HomeLinkItem } from '../atoms/LinkItem';
 import { ReactComponent as VLines } from '../../assets/icons/v-lines.svg'
-import barrySample from '../../assets/images/barry-sample.jpg'
-import justinSample from '../../assets/images/justin-sample.jpg'
-import kimSample from '../../assets/images/kim-sample.jpg'
-import tijnSample from '../../assets/images/tijn-sample.jpg'
+import barrySample from '../../assets/images/barry/barry-sample.jpg'
+import justinSample from '../../assets/images/justin/justin-sample.jpg'
+import kimSample from '../../assets/images/kim/kim-sample.jpg'
+import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
 
 import { HeroInner, HeroTextInner, TextContainer, UpperHeader, Header, LinksContainer } from './Hero';
 

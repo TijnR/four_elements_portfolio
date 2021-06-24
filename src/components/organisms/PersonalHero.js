@@ -6,7 +6,7 @@ import HeroScrollButton from '../molecules/HeroScrollButton';
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
-import LinkItem from '../atoms/LinkItem';
+import LinkItem, {InlineLinkItem} from '../atoms/LinkItem';
 import { HeroInner, HeroTextInner, TextContainer, UpperHeader, Header, LinksContainer } from './Hero';
 import CanvasPerson from './persondotted/CanvasPerson';
 
@@ -17,6 +17,7 @@ const PersonalText = styled.p`
     margin-bottom: ${spacing.lg};
     font-size: ${typography.fontSizes.xl};
     max-width: 550px;
+    z-index: 5;
 `
 
 const PersonCanvasContainer = styled.div`
@@ -27,7 +28,7 @@ const PersonCanvasContainer = styled.div`
     z-index: 1;
 `
 
-function PersonalHero({prof, name, text, leerdoelen, person}) {
+function PersonalHero({prof, name, text, leerdoelen, person, portfolio}) {
 
     const displayLinks = leerdoelen.map((l,i) => {
         return(<LinkItem size="big" key={i} arrow="right" to={l.to} underline>{l.name}</LinkItem>)
@@ -41,7 +42,7 @@ function PersonalHero({prof, name, text, leerdoelen, person}) {
                 <UpperHeader>{prof}</UpperHeader>
                 <Header>{name}<span>.</span>
                 </Header>
-                <PersonalText>{text}</PersonalText>
+                <PersonalText>{text} {portfolio && <InlineLinkItem url={portfolio.fullUrl}>{portfolio.baseUrl}</InlineLinkItem>}</PersonalText>
                 <LinksContainer>
                     {displayLinks}
                 </LinksContainer>

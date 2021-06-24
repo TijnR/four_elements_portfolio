@@ -9,8 +9,8 @@ import DualLinkContainer from '../components/molecules/DualLinkContainer';
 function Kim() {
     return (
         <>
-            <Navigation activeIndex={3}/>
-            <PersonalHero name={kimPersonal.name} prof={kimPersonal.prof} text={kimPersonal.text} leerdoelen={kimPersonal.leerdoelen} person="kim"/>
+            <Navigation activeIndex={3} activeIcon={3}/>
+            <PersonalHero name={kimPersonal.name} prof={kimPersonal.prof} text={kimPersonal.text} leerdoelen={kimPersonal.leerdoelen} portfolio={kimPersonal.portfolio} person="kim"/>
             <ProjectsSection leerdoelen={kimPersonal.leerdoelen}/>
             <DualLinkContainer firstName="Justin van Wijk" firstTo="/justin" secondName="Tijn Roozen" secondTo="/tijn"/>
             <Footer/>

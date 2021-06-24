@@ -1,6 +1,10 @@
 export const barryPersonal = {
     name: 'Barry Boogert',
-    prof: 'Visuel Designer',
+    prof: 'Visual Designer',
+    portfolio: {
+        baseUrl: "",
+        fullUrl: ""
+    },
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
         {to: '/barry/grafisch-ontwerp', name: 'Grafisch ontwerp', img: 1},
@@ -11,7 +15,11 @@ export const barryPersonal = {
 
 export const justinPersonal = {
     name: 'Justin van wijk',
-    prof: 'UX & Visuel Designer',
+    prof: 'UX & Visual Designer',
+    portfolio: {
+        baseUrl: "",
+        fullUrl: ""
+    },
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
         {to: '/justin/web-3D', name: 'Web - 3D', img: 4},
@@ -22,8 +30,12 @@ export const justinPersonal = {
 
 export const kimPersonal = {
     name: 'Kim van der Waart',
-    prof: 'Visuel Designer',
-    text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
+    prof: 'Visual Designer',
+    portfolio: {
+        baseUrl: "kimvanderwaart.nl",
+        fullUrl: "https://kimvanderwaart.nl/"
+    },
+    text: 'Hey! Leuk dat je op mijn pagina kijkt. Als ontwerper houd ik mij het liefst bezig met visuele vormgeving. Tijdens deze minor heb ik mij erop gefocust om zo allround mogelijk te worden zodat ik later veel te bieden heb. Neem vooral een kijkje! Meer werk van mij is te vinden op ',
     leerdoelen: [
         {to: '/kim/visual-identity', name: 'Visual Identity', img: 7},
         {to: '/kim/hand-lettering', name: 'Hand Lettering', img: 8},
@@ -34,6 +46,10 @@ export const kimPersonal = {
 export const tijnPersonal = {
     name: 'Tijn Roozen',
     prof: 'Frontend Developer',
+    portfolio: {
+        baseUrl: "",
+        fullUrl: ""
+    },
     text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
     leerdoelen: [
         {to: '/tijn/react-typescript', name: 'react & typescript', img: 10},

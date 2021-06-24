@@ -142,12 +142,12 @@ function NavLinkDesk({linkData, active, activeSubjectIndex, setDropOpen}) {
 
     const displayDropDownLinks = dropdownItems && dropdownItems.map((item, i) => {
         return activeSubjectIndex === i ? 
-        <Link key={i}>
+        <Link key={i} to={item.to}>
             <DropDownLinks open={dropdownOpen} delay={i / 5} key={i} active>
                 {item.name}
             </DropDownLinks>
         </Link> :
-        <Link key={i}>   
+        <Link key={i} to={item.to}>   
             <DropDownLinks open={dropdownOpen} delay={i / 5} key={i}>
                 {item.name}
             </DropDownLinks>

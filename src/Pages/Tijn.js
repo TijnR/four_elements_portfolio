@@ -10,7 +10,7 @@ import DualLinkContainer from '../components/molecules/DualLinkContainer';
 function Tijn() {
     return (
         <>
-           <Navigation activeIndex={4}/>
+           <Navigation activeIndex={4} activeIcon={4}/>
             <PersonalHero name={tijnPersonal.name} prof={tijnPersonal.prof} text={tijnPersonal.text} leerdoelen={tijnPersonal.leerdoelen} person="tijn"/>
             <ProjectsSection leerdoelen={tijnPersonal.leerdoelen}/>
             <DualLinkContainer firstName="Kim van der Waart" firstTo="/kim" secondName="Barry Boogert" secondTo="/barry"/>

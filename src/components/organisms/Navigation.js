@@ -122,7 +122,7 @@ const MobileMenuButton = Styled.span`
 `
 
 
-function Navigation({activeIndex, activeSubjectIndex}) {
+function Navigation({activeIndex, activeSubjectIndex, activeIcon}) {
     const [dropOpen, setDropOpen] = useState(false)
     const [scrolling, setScrolling] = useState(false)
     const [mobileOpen, setMobileOpen] = useState(false)
@@ -130,7 +130,7 @@ function Navigation({activeIndex, activeSubjectIndex}) {
 
     const displayListItem = listItems.map((item, i) => {
         return activeIndex === i ? 
-        <NavLinkDesk linkData={item} setDropOpen={setDropOpen} key={i} activeSubjectIndex={activeSubjectIndex || null} active/> :
+        <NavLinkDesk linkData={item} setDropOpen={setDropOpen} key={i} activeSubjectIndex={activeSubjectIndex} active/> :
         <NavLinkDesk linkData={item} setDropOpen={setDropOpen} key={i}/>
     })
 
@@ -154,7 +154,7 @@ function Navigation({activeIndex, activeSubjectIndex}) {
     return (
         <NavContainer scrolling={scrolling ? 'true' : 'false'}>
             <InnerNav>
-                <Logo />
+                <Logo activeIcon={activeIcon}/>
                 
                 <ItemsContainer>
                 {displayListItem}

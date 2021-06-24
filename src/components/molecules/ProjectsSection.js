@@ -4,12 +4,15 @@ import { typography } from '../../theme/typography';
 import { colors } from '../../theme/colors';
 import { Container } from '../template/Container';
 import { container } from '../../theme/container';
-import barrySample from '../../assets/images/barry-sample.jpg'
-import justinSample from '../../assets/images/justin-sample.jpg'
-import kimSample from '../../assets/images/kim-sample.jpg'
-import tijnSample from '../../assets/images/tijn-sample.jpg'
 import { Link } from 'react-router-dom';
 import { spacing } from '../../theme/spacing';
+
+import barrySample from '../../assets/images/barry/barry-sample.jpg'
+import justinSample from '../../assets/images/justin/justin-sample.jpg'
+import kim1 from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
+import kim2 from '../../assets/images/kim/leerdoelB/digital-wordmark.jpg'
+import kimSample from '../../assets/images/kim/kim-sample.jpg'
+import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
 
 const InnerContainer = styled.div`
     display: flex;
@@ -110,7 +113,7 @@ function ProjectsSection({leerdoelen}) {
     })
 
     return (
-        <Container bg="black" ref={container}>
+        <Container bg="black" ref={container} style={{paddingBottom: 20}}>
             <InnerContainer>
                 {displayLeerdoel}
             </InnerContainer>
@@ -144,10 +147,10 @@ const ProjectItemBig = ({to, name, index, img}) => {
         source = justinSample
         break;
         case 7: 
-        source = kimSample
+        source = kim1
         break;
         case 8: 
-        source = kimSample
+        source = kim2
         break;
         case 9: 
         source = kimSample

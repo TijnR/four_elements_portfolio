@@ -243,7 +243,7 @@ export const colors = {
   black: '#000000',
   white: '#ffffff',
   offWhite: '#F9F5F0',
-  grey: '#888888',
+  grey: '#F0F0F0',
   succes: '#e5fdf4',
   warning: '#fde5e5',
   neutral: '#E5F4FD',
