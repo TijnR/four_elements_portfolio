@@ -28,6 +28,7 @@ const SImage = styled.img`
     width: 100%;
     object-fit: cover;
     opacity: 0.4;
+    filter: brightness(0.7);
 `
 
 const STextContainer = styled.div`

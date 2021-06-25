@@ -11,7 +11,7 @@ const LinkContainer = styled.div`
     display: inline-flex;
     z-index: 5;
     border-bottom: 2px solid ${props => props.underline ?  colors.primary : 'none'};
-    margin: ${spacing.xxxs} 0;
+    margin: ${spacing.xs} 0;
     align-items: center;
 
     :hover {

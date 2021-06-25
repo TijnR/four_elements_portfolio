@@ -13,13 +13,14 @@ const TextContainer = styled.div`
 `
 
 const TextTitle = styled.h4`
-    font-size: ${typography.fontSizes.md};
+    font-size: ${typography.fontSizes.lg};
     font-weight: ${typography.fontWeights.extrabold};
-    margin: ${spacing.sm} 0;
+    margin: ${spacing.xs} 0;
 `
 
 const TextPara = styled.p`
     line-height: ${spacing.lg};
+    font-size: ${typography.fontSizes.md};
 `
 
 
