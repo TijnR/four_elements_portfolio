@@ -32,7 +32,7 @@ const LinkText = styled.span`
  font-weight: ${typography.fontWeights.extrabold};
  letter-spacing: normal;
  text-transform: uppercase;
- color: ${colors.white};   
+ color: ${props => props.bgWhite ? colors.black : colors.white};   
  padding: ${spacing.xxxxs} 0;
  transition: 300ms ease-out;
  transition-property: color, font-style;
@@ -53,12 +53,12 @@ const IconContainer = styled.div`
     }
 `
 
-function LinkItem({to, children, arrow, underline, size}) {
+function LinkItem({to, children, arrow, underline, size, bgWhite}) {
     if(arrow === "right") {
         return (
         <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
-                <LinkText size={size}>{children}</LinkText>
+                <LinkText size={size} bgWhite={bgWhite}>{children}</LinkText>
                 <IconContainer size={size} style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
             </LinkContainer>
         </Link>)
@@ -66,14 +66,14 @@ function LinkItem({to, children, arrow, underline, size}) {
         return ( 
         <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
-                <IconContainer size={size} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
+                <IconContainer size={size} bgWhite={bgWhite} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
                 <LinkText size={size}>{children}</LinkText>
             </LinkContainer>
         </Link>)
     } else {
         return (
             <Link to={to} style={{zIndex: 5}}>
-                <LinkContainer size={size} underline={underline}>
+                <LinkContainer size={size} bgWhite={bgWhite} underline={underline}>
                 <LinkText size={size}>{children}</LinkText>
                 </LinkContainer>
             </Link>

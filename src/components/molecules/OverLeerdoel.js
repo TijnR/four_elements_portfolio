@@ -16,6 +16,10 @@ const SInner = styled.div`
     justify-content: space-between;
     max-width: ${container.maxWidthText}px;
 
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
+
 `
 
 const OverContainer = styled.div`
@@ -50,10 +54,12 @@ const SmallTitle = styled(STitle)`
 
 const SText = styled.p`
     max-width: 750px;
+    line-height: ${typography.lineHeights.base};
 `
 
 const LowerText = styled.p`
     margin-top: 5px;
+
 `
 
 

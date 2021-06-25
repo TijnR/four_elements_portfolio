@@ -13,10 +13,20 @@ export const Container = styled.section`
 
 export const InnerContainer = styled.div`
     max-width: ${container.maxWidth}px;
+    display: flex;
+    flex-direction: ${props => props.flex ? props.flex : "flex"};   
+    text-align: ${props => props.textAlign ? props.textAlign : "start"};   
+    justify-content: ${props => props.justifyContent ? props.justifyContent : "flex-start"};
+    align-items: ${props => props.alignItems ? props.alignItems : "flex-start"};
     width: 100%;
 `
 
 export const InnerTextContainer = styled.div`
     max-width: ${container.maxWidthText}px;
+    display: flex;
+    flex-direction: ${props => props.flex ? props.flex : "flex"};   
+    text-align: ${props => props.textAlign ? props.textAlign : "start"};   
+    justify-content: ${props => props.justifyContent ? props.justifyContent : "flex-start"};
+    align-items: ${props => props.alignItems ? props.alignItems : "flex-start"};
     width: 100%;
 `

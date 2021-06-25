@@ -42,9 +42,13 @@ const SText = styled.h1`
     color: ${colors.white};
     font-size: ${typography.fontSizes.bigboy};
     text-transform: uppercase;
+
+    @media(max-width: 768px) {
+        font-size: ${typography.fontSizes["5xl"]};
+    }
 `
 
-function HeroSubject() {
+function HeroSubject({img}) {
     return (
         <HeroContainer >
             <HeroInner>
@@ -54,7 +58,7 @@ function HeroSubject() {
                 <HeroScrollButton/>
             </HeroInner>
             <ImageContainer>
-               <SImage src={slide7}/> 
+               <SImage src={img}/> 
             </ImageContainer>
             
         </HeroContainer>

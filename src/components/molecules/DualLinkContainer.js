@@ -14,12 +14,12 @@ const InnerContainer = styled.div`
 `
 
 
-function DualLinkContainer({firstName, firstTo, secondName, secondTo, flexStart}) {
+function DualLinkContainer({firstName, firstTo, secondName, secondTo, flexStart, bgWhite}) {
     return (
-        <Container bg="black" style={{padding: "40px 0"}}>
+        <Container bg={!bgWhite && "black"} style={{padding: "40px 0"}}>
             <InnerContainer flexStart={flexStart}>
-                { firstName && <LinkItem arrow="left" to={firstTo} just="left">{firstName}</LinkItem>}
-                { secondName && <LinkItem arrow="right" to={secondTo} just="right">{secondName}</LinkItem>}
+                { firstName && <LinkItem arrow="left" to={firstTo} just="left" bgWhite={bgWhite}>{firstName}</LinkItem>}
+                { secondName && <LinkItem arrow="right" to={secondTo} just="right" bgWhite={bgWhite}>{secondName}</LinkItem>}
             </InnerContainer>
         </Container>
     )
