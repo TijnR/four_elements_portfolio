@@ -9,7 +9,9 @@ import { SpanTitle } from '../atoms/Titles';
 
 const SPara = styled.p`
     color: ${colors.white};
+    margin-top: 0;
     padding: ${spacing.lg};
+    padding-top: ${spacing.sm};
     max-width: 500px;
     line-height: ${typography.lineHeights.base};
 `

@@ -130,3 +130,6 @@ yarn-error.log*
 .firebaserc
 firebase.json
 .firebase/
+.firebase/*
+firebase/
+firebase/*

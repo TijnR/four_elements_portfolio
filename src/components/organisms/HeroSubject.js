@@ -7,7 +7,6 @@ import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 
-import slide7 from '../../assets/images/kim/leerdoelA/Slide7.jpg'
 import { HeroInner} from './Hero';
 
 
@@ -41,7 +40,8 @@ const STextContainer = styled.div`
 
 const SText = styled.h1`
     color: ${colors.white};
-    font-size: ${typography.fontSizes.bigboy};
+    font-size: ${typography.fontSizes["6xl"]};
+    font-weight: ${typography.fontWeights.extrabold};
     text-transform: uppercase;
 
     @media(max-width: 768px) {
@@ -52,15 +52,15 @@ const SText = styled.h1`
 function HeroSubject({img}) {
     return (
         <HeroContainer >
+            <ImageContainer>
+               <SImage src={img}/> 
+            </ImageContainer>
             <HeroInner>
                 <STextContainer>
                     <SText>Visual Identity</SText>
                 </STextContainer>
                 <HeroScrollButton/>
             </HeroInner>
-            <ImageContainer>
-               <SImage src={img}/> 
-            </ImageContainer>
             
         </HeroContainer>
     )

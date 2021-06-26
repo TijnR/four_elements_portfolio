@@ -8,17 +8,30 @@ import { spacing } from '../../theme/spacing';
 import { SpanTitle } from '../atoms/Titles';
 
 
+const SInnerTextContainer = styled(InnerTextContainer)`
+    
+    @media (max-width: 1024px) {
+        flex-direction: column
+    }
+`
+
 const STextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     padding: ${spacing.xl} 0;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding: ${spacing.md} 0;
+    }
 `
 
 const SText = styled.p`
     font-size: ${typography.fontSizes.lg};
-    padding-right: 5rem;
+    padding-right: 3rem;
     line-height: ${typography.lineHeights.base};
+
 `
 
 function ReflectieSectie({items}) {
@@ -35,9 +48,9 @@ function ReflectieSectie({items}) {
 
     return (
         <Container>
-            <InnerTextContainer>
+            <SInnerTextContainer>
                 {displayItems}
-            </InnerTextContainer>
+            </SInnerTextContainer>
         </Container>
     )
 }

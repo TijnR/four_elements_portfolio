@@ -13,7 +13,6 @@ const SContainer = styled(Container)`
 const SInner = styled.div`
     display: flex;
     width: 100%;
-    justify-content: space-between;
     max-width: ${container.maxWidthText}px;
 
     @media(max-width: 768px) {
@@ -25,9 +24,12 @@ const SInner = styled.div`
 const OverContainer = styled.div`
     display: flex;
     flex-direction: column;
+    padding-right: 5rem;
 `
 
-const AllData = styled(OverContainer)`
+const AllData = styled.div`
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 `
 

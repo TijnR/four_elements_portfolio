@@ -16,7 +16,7 @@ const InnerContainer = styled.div`
 
 function DualLinkContainer({firstName, firstTo, secondName, secondTo, flexStart, bgWhite}) {
     return (
-        <Container bg={!bgWhite && "black"} style={{padding: "40px 0"}}>
+        <Container bg={!bgWhite && "black"} style={{padding: "40px 20"}}>
             <InnerContainer flexStart={flexStart}>
                 { firstName && <LinkItem arrow="left" to={firstTo} just="left" bgWhite={bgWhite}>{firstName}</LinkItem>}
                 { secondName && <LinkItem arrow="right" to={secondTo} just="right" bgWhite={bgWhite}>{secondName}</LinkItem>}
