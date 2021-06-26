@@ -10,7 +10,7 @@ function Kim() {
     return (
         <>
             <Navigation activeIndex={3} activeIcon={3}/>
-            <PersonalHero name={kimPersonal.name} prof={kimPersonal.prof} text={kimPersonal.text} leerdoelen={kimPersonal.leerdoelen} portfolio={kimPersonal.portfolio} person="kim"/>
+            <PersonalHero name={kimPersonal.name} prof={kimPersonal.prof} text={kimPersonal.text} leerdoelen={kimPersonal.leerdoelen} portfolio={kimPersonal.portfolio}/>
             <ProjectsSection leerdoelen={kimPersonal.leerdoelen}/>
             <DualLinkContainer firstName="Justin van Wijk" firstTo="/justin" secondName="Tijn Roozen" secondTo="/tijn"/>
             <Footer/>

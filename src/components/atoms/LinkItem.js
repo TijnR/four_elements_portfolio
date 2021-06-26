@@ -66,15 +66,15 @@ function LinkItem({to, children, arrow, underline, size, bgWhite}) {
         return ( 
         <Link to={to} style={{zIndex: 5}}>
             <LinkContainer underline={underline}>
-                <IconContainer size={size} bgWhite={bgWhite} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
-                <LinkText size={size}>{children}</LinkText>
+                <IconContainer size={size} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
+                <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
             </LinkContainer>
         </Link>)
     } else {
         return (
             <Link to={to} style={{zIndex: 5}}>
-                <LinkContainer size={size} bgWhite={bgWhite} underline={underline}>
-                <LinkText size={size}>{children}</LinkText>
+                <LinkContainer size={size} underline={underline}>
+                <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
                 </LinkContainer>
             </Link>
         )
@@ -84,7 +84,7 @@ function LinkItem({to, children, arrow, underline, size, bgWhite}) {
 
 
  const LinkTextInline = styled.span`
-    /* font-weight: ${typography.fontWeights.extrabold}; */
+    font-weight: ${typography.fontWeights.extrabold};
     color: ${colors.primary};  
     position: relative; 
 

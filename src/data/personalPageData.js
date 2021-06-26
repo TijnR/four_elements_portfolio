@@ -15,14 +15,14 @@ export const barryPersonal = {
 
 export const justinPersonal = {
     name: 'Justin van wijk',
-    prof: 'UX & Visual Designer',
+    prof: 'INTERACTION DESIGNER',
     portfolio: {
-        baseUrl: "",
-        fullUrl: ""
+        baseUrl: "justinvanwijk.nl",
+        fullUrl: "https://justinvanwijk.nl/"
     },
-    text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
+    text: 'Graag keek ik ernaar uit om mij te verdiepen in onderwerpen waar mijn interesses liggen, maar waarin ik ook mijn vaardigheden kan ontwikkelen. Het maken van web-3d modellen, een JavaScript- game, en een MVP van twee auto interfaces waren daarom de perfecte onderwerpen om mij mee bezig te houden. Oh ja, kijk je ook even op ',
     leerdoelen: [
-        {to: '/justin/web-3D', name: 'Web - 3D', img: 4},
+        {to: '/justin/web-3d', name: 'Web - 3D', img: 4},
         {to: '/justin/phaserjs', name: 'Phaser.js', img: 5},
         {to: '/justin/automotive-design', name: 'Automotive Design', img: 6}
     ]

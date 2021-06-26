@@ -72,7 +72,7 @@ function AbstractBackgroundAnimation() {
                 {title: "WAT HEB IK GELEERD?", text: "Ik heb allerlei verschillende effecten geleerd binnen After Effects. Ik heb geleerd hoe je deze op verschillende manieren kan gebruiken en combineren. Daarnaast heb ik verschillende manieren geleerd om een animatie te loopen. Ten slotte heb ik veel nieuwe sneltoetsen geleerd en leren werken met expressies."}
                 ]}/>
 
-            <DualLinkContainer firstName="Leerdoel 2" firstTo="/kim/hand-lettering"/>
+            <DualLinkContainer firstName="Leerdoel 2" firstTo="/kim/hand-lettering" bgWhite/>
             <Footer/>
         </>
         

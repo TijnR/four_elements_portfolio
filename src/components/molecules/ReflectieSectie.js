@@ -25,11 +25,14 @@ const STextContainer = styled.div`
         width: 100%;
         padding: ${spacing.md} 0;
     }
+
+    :first-child {
+        margin-right: 5rem;
+    }
 `
 
 const SText = styled.p`
     font-size: ${typography.fontSizes.lg};
-    padding-right: 3rem;
     line-height: ${typography.lineHeights.base};
 
 `

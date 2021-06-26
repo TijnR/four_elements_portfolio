@@ -37,7 +37,7 @@ function EindResultaat({text, images, videos}) {
     const displayImages = images.map((img, i) => {
         return(
             <ImageContainer key={i}>
-                {videos.length > 0 ? <Video thumb={img} src={videos[i]}/> : <SImage src={img}/> }
+                {videos ? <Video thumb={img} src={videos[i]}/> : <SImage src={img}/> }
             </ImageContainer>
         )
     })

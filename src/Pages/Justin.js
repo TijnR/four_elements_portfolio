@@ -10,7 +10,7 @@ function Justin() {
     return (
         <>
             <Navigation activeIndex={2} activeIcon={2}/>
-            <PersonalHero name={justinPersonal.name} prof={justinPersonal.prof} text={justinPersonal.text} leerdoelen={justinPersonal.leerdoelen} person="kim"/>
+            <PersonalHero name={justinPersonal.name} prof={justinPersonal.prof} text={justinPersonal.text} leerdoelen={justinPersonal.leerdoelen} portfolio={justinPersonal.portfolio}/>
             <ProjectsSection leerdoelen={justinPersonal.leerdoelen}/>
             <DualLinkContainer firstName="Justin van Wijk" firstTo="/justin" secondName="Tijn Roozen" secondTo="/tijn"/>
             <Footer/>

@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom';
 import { spacing } from '../../theme/spacing';
 
 import barrySample from '../../assets/images/barry/barry-sample.jpg'
-import justinSample from '../../assets/images/justin/justin-sample.jpg'
+import justinl1 from '../../assets/images/justin/Leerdoel-1.jpg'
+import justinl2 from '../../assets/images/justin/Leerdoel-2.jpg'
+import justinl3 from '../../assets/images/justin/Leerdoel-3.jpg'
 import kim1 from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
 import kim2 from '../../assets/images/kim/leerdoelB/digital-wordmark.jpg'
 import kimSample from '../../assets/images/kim/kim-sample.jpg'
@@ -138,13 +140,13 @@ const ProjectItemBig = ({to, name, index, img}) => {
         source = barrySample
         break;
         case 4: 
-        source = justinSample
+        source = justinl1
         break;
         case 5: 
-        source = justinSample
+        source = justinl2
         break;
         case 6: 
-        source = justinSample
+        source = justinl3
         break;
         case 7: 
         source = kim1

@@ -92,8 +92,6 @@ function ImgCarousel({images}) {
         </ImageContainer>)
     })
 
-    console.log(activeIndex);
-
     const handleClickBack = () => {
         let width = window.innerWidth
             || document.documentElement.clientWidth
