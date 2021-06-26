@@ -6,6 +6,7 @@ import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 import { SpanTitle } from '../atoms/Titles';
+import Video from '../atoms/Video';
 
 const SPara = styled.p`
     color: ${colors.white};
@@ -32,11 +33,11 @@ const SImage = styled.img`
 `
 
 
-function EindResultaat({text, images}) {
+function EindResultaat({text, images, videos}) {
     const displayImages = images.map((img, i) => {
         return(
             <ImageContainer key={i}>
-                <SImage src={img}/>
+                {videos.length > 0 ? <Video thumb={img} src={videos[i]}/> : <SImage src={img}/> }
             </ImageContainer>
         )
     })

@@ -8,6 +8,7 @@ import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 
 import { HeroInner} from './Hero';
+import Video from '../atoms/Video';
 
 
 
@@ -49,15 +50,15 @@ const SText = styled.h1`
     }
 `
 
-function HeroSubject({img}) {
+function HeroSubject({img, src, title}) {
     return (
         <HeroContainer >
             <ImageContainer>
-               <SImage src={img}/> 
+                {src ? <Video thumb={img} src={src} header/> : <SImage src={img}/> }
             </ImageContainer>
             <HeroInner>
                 <STextContainer>
-                    <SText>Visual Identity</SText>
+                    <SText>{title}</SText>
                 </STextContainer>
                 <HeroScrollButton/>
             </HeroInner>

@@ -33,17 +33,17 @@ function VisualIdentity() {
         
         <>
             <Navigation activeIndex={3} activeSubjectIndex={0} activeIcon={3}/>
-            <HeroSubject img={slide7}/>
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn" flexStart="right"/>
+            <HeroSubject img={slide7} title="Visual Identity"/>
+            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/kim/hand-lettering" flexStart="right"/>
             <OverLeerdoel text="Sinds 2017 heb ik mijn eigen bedrijf 'Waart'. Ik heb in de afgelopen jaren allerlei freelance opdrachten
-                        uitgevoerd, maar heb nooit de tijd genomen om een identiteit voor mijn bedrijf te ontwerpen. Daarnaast had
-                        ik ook nooit nagedacht over wat mijn waardes zijn en wat mij onderscheidt van anderen. Met de gedachte
-                        dat ik in de toekomst misschien zou willen uitbreiden en van 'Waart' een studio wil maken, leek het mij super
-                        leuk on ti¡dens het eerste blok van de minor een visuele identiteit voor 'Studio Waart' te ontwerpen."
-                        rol="Graphic Designer"
-                        tools="Illustrator, Indesign, Photoshop, Lightroom"
-                        technieken="Graphic Design, Branding"
-                        />
+            uitgevoerd, maar heb nooit de tijd genomen om een identiteit voor mijn bedrijf te ontwerpen. Daarnaast had
+            ik ook nooit nagedacht over wat mijn waardes zijn en wat mij onderscheidt van anderen. Met de gedachte
+            dat ik in de toekomst misschien zou willen uitbreiden en van 'Waart' een studio wil maken, leek het mij super
+            leuk on ti¡dens het eerste blok van de minor een visuele identiteit voor 'Studio Waart' te ontwerpen."
+            rol="Graphic Designer"
+            tools="Illustrator, Indesign, Photoshop, Lightroom"
+            technieken="Graphic Design, Branding"
+            />
 
             <ProcesLane steps={
                 ["Voordat ik de identiteit kon ontwerpen heb ik een concurrentieanalyse uitgevoerd en moodboard gemaakt.",
@@ -63,7 +63,7 @@ identiteit heb ik samengevoegd in een identity guide." images={[kaartjesMockup, 
                 {title: "WAT HEB IK GELEERD?", text: "Na verschillende cursussen over visual identity's te volgen heb ik veel geleerd over de stappen die je moet zetten om tot goed een eindresultaat. Door van verschillende designers te horen wat hun strategie is kon ik de beste punten combineren tot een strategie die voor mij werkt. Daarnaast heb ik super veel geleerd over logo design. Ik heb namelijk ook een logo cursus gevolgd waarbij ik veel theorie leerde over logo's en illustrator een stuk beter leerde kennen."}
                 ]}/>
 
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn" flexStart="right" bgWhite/>
+            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/kim/hand-lettering" flexStart="right" bgWhite/>
             <Footer/>
         </>
         

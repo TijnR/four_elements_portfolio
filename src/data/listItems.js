@@ -30,7 +30,7 @@ export const listProjects = [
 
     {name: "barry boogert", projectName: "Webdesign", to: '/barry/grafisch-ontwerp', img: 2},
     {name: "justin van wijk", projectName: "Phaser.js", to: '/justin/web-3D', img: 5},
-    {name: "kim van der waart", projectName: "Hand Lettering", to: '/kim/visual-identity', img: 8},
+    {name: "kim van der waart", projectName: "Hand Lettering", to: '/kim/hand-lettering', img: 8},
     {name: "tijn roozen", projectName: "IOS Developement", to: '/tijn/react-typescript', img: 11},
 
     {name: "barry boogert", projectName: "UX/UI", to: '/barry/grafisch-ontwerp', img: 3},
