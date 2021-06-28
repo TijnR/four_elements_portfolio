@@ -24,6 +24,7 @@ import slide6 from '../assets/images/justin/leerdoelB/6.jpg'
 import slide7 from '../assets/images/justin/leerdoelB/7.jpg'
 import slide8 from '../assets/images/justin/leerdoelB/8.jpg'
 import slide9 from '../assets/images/justin/leerdoelB/9.jpg'
+import phaserClip from '../assets/images/justin/leerdoelB/phaserclip.mp4'
 
 
 function PhaserJs() {
@@ -31,7 +32,7 @@ function PhaserJs() {
         
         <>
             <Navigation activeIndex={2} activeSubjectIndex={1} activeIcon={2}/>
-            <HeroSubject img={foto3} title="Phaser.js"/>
+            <HeroSubject img={foto3} src={phaserClip} title="Phaser.js"/>
             <DualLinkContainer firstName="Leerdoel 1" firstTo="/justin/web-3d" secondName="Leerdoel 3" secondTo="/justin/automotive-design"/>
             <OverLeerdoel text="Het was ruim één jaar geleden sinds ik voor het laatst iets met JavaScript heb gedaan tijdens het programmeren. Daarom leek het mij een goed idee om mijn JavaScript-vaardigheden op een leuke op te frissen, namelijk door een game te maken met behulp van een JavaScript-bibliotheek genaamd Phaser.js. Hiervoor heb ik een cursus gevolgd op Codecademy. Aan de hand van de opgedane kennis heb ik mijn eigen versie van het spel Breakout gemaakt."
             rol="Front-end Developer"
