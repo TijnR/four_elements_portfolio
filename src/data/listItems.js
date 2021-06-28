@@ -16,7 +16,7 @@ export const listItems = [
         {to: '/kim/abstract-background-animation', name: 'Abstract Background Animation'}
     ]}, 
     {to: '/tijn', name: 'tijn', dropdownItems: [
-        {to: '/tijn/react-typescript', name: 'react & typescript'},
+        {to: '/tijn/react-typescript', name: 'React & Typescript'},
         {to: '/tijn/ios-development', name: 'IOS Developement'},
         {to: '/tijn/threejs-react', name: 'Three.js & React-Three-Fiber'}
     ]}

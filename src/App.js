@@ -16,6 +16,9 @@ import AutomotiveDesign from './pages/AutomotiveDesign';
 import Rebranding from './pages/Rebranding';
 import RedesignWebsites from './pages/RedesignWebsites';
 import LogoDesign from './pages/LogoDesign';
+import ReactTypescript from './pages/ReactTypescript';
+import IosDevelopment from './pages/IosDevelopment';
+import ThreejsReact from './pages/ThreejsReact';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
       <ScrollToTop/>
       <Route exact path="/" component={Home} />
       <Route exact path="/tijn" component={Tijn} />
+      <Route exact path="/tijn/react-typescript" component={ReactTypescript} />
+      <Route exact path="/tijn/ios-development" component={IosDevelopment} />
+      <Route exact path="/tijn/threejs-react" component={ThreejsReact} />
       <Route exact path="/barry" component={Barry} />
       <Route exact path="/barry/rebranding" component={Rebranding} />
       <Route exact path="/barry/redesign-websites" component={RedesignWebsites} />
