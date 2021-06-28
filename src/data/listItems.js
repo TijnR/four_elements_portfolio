@@ -1,9 +1,9 @@
 export const listItems = [
     {to: '/', name: 'home'}, 
     {to: '/barry', name: 'barry', dropdownItems: [
-        {to: '/barry/grafisch-ontwerp', name: 'Grafisch ontwerp'},
-        {to: '/barry/webdesign', name: 'Webdesign'},
-        {to: '/barry/UXUI', name: 'UX/UI'}
+        {to: '/barry/rebranding', name: 'Rebranding'},
+        {to: '/barry/redesign-websites', name: 'Redesign Websites'},
+        {to: '/barry/logo-design', name: 'Logo Design'}
     ]}, 
     {to: '/justin', name: 'justin', dropdownItems: [
         {to: '/justin/web-3d', name: 'Web - 3D'},
@@ -23,17 +23,17 @@ export const listItems = [
 ]
 
 export const listProjects = [
-    {name: "barry boogert", projectName: "Grafisch ontwerp", to: '/barry/grafisch-ontwerp', img: 1},
+    {name: "barry boogert", projectName: "Rebranding", to: '/barry/rebranding', img: 1},
     {name: "justin van wijk", projectName: "Web - 3D", to: '/justin/web-3d', img: 4},
     {name: "kim van der waart", projectName: "Visual Identity", to: '/kim/visual-identity', img: 7},
     {name: "tijn roozen", projectName: "React & Typescript", to: '/tijn/react-typescript', img: 10},
 
-    {name: "barry boogert", projectName: "Webdesign", to: '/barry/grafisch-ontwerp', img: 2},
+    {name: "barry boogert", projectName: "Redesign Websites", to: '/barry/redesign-websites', img: 2},
     {name: "justin van wijk", projectName: "Phaser.js", to: '/justin/web-3d', img: 5},
     {name: "kim van der waart", projectName: "Hand Lettering", to: '/kim/hand-lettering', img: 8},
     {name: "tijn roozen", projectName: "IOS Developement", to: '/tijn/react-typescript', img: 11},
 
-    {name: "barry boogert", projectName: "UX/UI", to: '/barry/grafisch-ontwerp', img: 3},
+    {name: "barry boogert", projectName: "Logo Design", to: '/barry/logo-design', img: 3},
     {name: "justin van wijk", projectName: "Automotive Design", to: '/justin/web-3d', img: 6},
     {name: "kim van der waart", projectName: "Abstract Background Animation", to: '/kim/visual-identity', img: 9},
     {name: "tijn roozen", projectName: "Three.js & React-Three-Fiber", to: '/tijn/react-typescript', img: 12},

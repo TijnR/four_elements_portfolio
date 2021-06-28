@@ -53,10 +53,10 @@ const IconContainer = styled.div`
     }
 `
 
-function LinkItem({to, children, arrow, underline, size, bgWhite}) {
+function LinkItem({to, children, arrow, underline, size, bgWhite, href}) {
     if(arrow === "right") {
         return (
-        <Link to={to} style={{zIndex: 5}}>
+        <Link to={to} style={{zIndex: 5}} href={href}>
             <LinkContainer underline={underline}>
                 <LinkText size={size} bgWhite={bgWhite}>{children}</LinkText>
                 <IconContainer size={size} style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
@@ -64,7 +64,7 @@ function LinkItem({to, children, arrow, underline, size, bgWhite}) {
         </Link>)
     } else if (arrow === "left") {
         return ( 
-        <Link to={to} style={{zIndex: 5}}>
+        <Link to={to} style={{zIndex: 5}} href={href}>
             <LinkContainer underline={underline}>
                 <IconContainer size={size} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
                 <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
@@ -72,7 +72,7 @@ function LinkItem({to, children, arrow, underline, size, bgWhite}) {
         </Link>)
     } else {
         return (
-            <Link to={to} style={{zIndex: 5}}>
+            <Link to={to} style={{zIndex: 5}} href={href}>
                 <LinkContainer size={size} underline={underline}>
                 <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
                 </LinkContainer>
@@ -80,6 +80,36 @@ function LinkItem({to, children, arrow, underline, size, bgWhite}) {
         )
     }
 }
+
+export function LinkItemRedirect({children, arrow, underline, size, bgWhite, href}) {
+    if(arrow === "right") {
+        return (
+        <a href={href} style={{zIndex: 5}} target="_blank">
+            <LinkContainer underline={underline}>
+                <LinkText size={size} bgWhite={bgWhite}>{children}</LinkText>
+                <IconContainer size={size} style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
+            </LinkContainer>
+        </a>)
+    } else if (arrow === "left") {
+        return ( 
+        <a href={href} style={{zIndex: 5}} target="_blank">
+            <LinkContainer underline={underline}>
+                <IconContainer size={size} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
+                <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
+            </LinkContainer>
+        </a>)
+    } else {
+        return (
+            <a href={href} style={{zIndex: 5}} target="_blank">
+                <LinkContainer size={size} underline={underline}>
+                <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
+                </LinkContainer>
+            </a>
+        )
+    }
+}
+
+
 
 
 
@@ -112,8 +142,8 @@ function LinkItem({to, children, arrow, underline, size, bgWhite}) {
 
 export function InlineLinkItem({children, url}) {
     return(
-    <a href={url} style={{zIndex: 5}}>
-                <LinkTextInline >{children}</LinkTextInline>
+    <a href={url} style={{zIndex: 5}} target="_blank">
+        <LinkTextInline >{children}</LinkTextInline>
     </a>
     )
 }

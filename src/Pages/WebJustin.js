@@ -59,7 +59,7 @@ function WebJustin() {
             <SectionImage img={auto}/>
             <EindResultaat text="De identiteit bestaat it een logo, visitekaartjes, briefpapier, een
              e-mailhandtekening en social media sjablonen. Alle onderdelen van mijn
-            identiteit heb ik samengevoegd in een identity guide." images={[donut, spline]}/>
+            identiteit heb ik samengevoegd in een identity guide." images={[donut, spline]} links={[{name: "Showcase Website", href: "https://jvw17.github.io/Web-3D-programmeren-3/"}]}/>
             <ImgCarousel images={[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14, slide15, slide16]}/>
 
             <ReflectieSectie items={[

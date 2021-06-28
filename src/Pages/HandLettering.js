@@ -24,7 +24,7 @@ function HandLettering() {
         <>
             <Navigation activeIndex={3} activeSubjectIndex={1} activeIcon={3}/>
             <HeroSubject img={quote} title="Hand lettering"/>
-            <DualLinkContainer firstName="Leerdoel 1" firstTo="/kim/visual-identity" secondName="Leerdoel 2" secondTo="/tijn"/>
+            <DualLinkContainer firstName="Leerdoel 1" firstTo="/kim/visual-identity" secondName="Leerdoel 3" secondTo="/kim/abstract-background-animation"/>
             <OverLeerdoel text="In het verleden liep ik er tijdens het ontwerpen van een logo wel eens tegen aan dat ik letters niet goed kon
                                 tekenen. Een idee die ik in mijn hood had kon ik niet goed vertalen naar papier. Het leek mij daarom tof om
                                 mij tijdens het tweede blok te verdiepen in hand lettering. Daarbij wilde ik mij vooral focussen op het

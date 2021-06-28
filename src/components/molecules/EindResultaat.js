@@ -7,6 +7,7 @@ import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
 import { SpanTitle } from '../atoms/Titles';
 import Video from '../atoms/Video';
+import {LinkItemRedirect} from '../atoms/LinkItem';
 
 const SPara = styled.p`
     color: ${colors.white};
@@ -32,8 +33,43 @@ const SImage = styled.img`
     opacity: 1;
 `
 
+const LinksContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-bottom: ${spacing.md};
 
-function EindResultaat({text, images, videos}) {
+    div{
+        padding: none;
+    }
+`
+
+const ImageGridContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+`
+
+const SquareImageContainer = styled.div`
+    width: calc(50% - 20px);
+    height: 500px;
+    margin-bottom: 40px;
+
+    @media(max-width: 768px){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+`
+
+const SquareImage = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+`
+
+function EindResultaat({text, images, videos, links, smallImages}) {
     const displayImages = images.map((img, i) => {
         return(
             <ImageContainer key={i}>
@@ -42,11 +78,41 @@ function EindResultaat({text, images, videos}) {
         )
     })
 
+    const displayLinks = links?.map((link, i) => {
+        return(
+          
+                <LinkItemRedirect key={i} href={link.href} underline>
+                    {link.name}
+                </LinkItemRedirect>
+        
+        )
+    })
+
+    const displaySmallImages = smallImages?.map((img, i) => {
+        return(
+                <SquareImageContainer key={i}>
+                    <SquareImage src={img}/>
+                </SquareImageContainer>
+        )
+    })
+
     return (
         <Container bg="black">
             <InnerContainer justifyContent="center" alignItems="center" textAlign="center" flex="column">
             <SpanTitle colorWhite>HET EINDRESULTAAT</SpanTitle>
             <SPara>{text}</SPara>
+            {links &&
+                <LinksContainer>
+                {displayLinks}
+                </LinksContainer>
+            }
+            {smallImages && 
+                <ImageGridContainer>
+                    {displaySmallImages}
+                </ImageGridContainer>
+            
+            }
+                
             {displayImages}
             </InnerContainer>
         </Container>

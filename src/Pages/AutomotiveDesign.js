@@ -58,7 +58,7 @@ function AutomotiveDesign() {
             <SectionImage img={foto1}/>
             <EindResultaat text="De identiteit bestaat it een logo, visitekaartjes, briefpapier, een
              e-mailhandtekening en social media sjablonen. Alle onderdelen van mijn
-            identiteit heb ik samengevoegd in een identity guide." images={[foto2, foto3]}/>
+            identiteit heb ik samengevoegd in een identity guide." images={[foto2, foto3]} links={[{name: "Interactief infoscherm", href: "https://xd.adobe.com/view/a4cc64d9-a507-4828-91bc-9b33911f7590- f19f/?fullscreen&hints=off"}, {name: "Niet-interactief multimediascherm", href: "https://xd.adobe.com/view/80b3ba1a-5181-49ec-b218-71c1d78fd163-d5e0/"}, {name: "Interactief multimediascherm", href:"https://xd.adobe.com/view/64a4b780-a33b-43cd-80b8-322fb4c10ec0-31f7/?fullscreen&hints=off"}]}/>
             <ImgCarousel images={[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14, slide15]}/>
 
             <ReflectieSectie items={[

@@ -13,6 +13,9 @@ import AbstractBackgroundAnimation from './pages/AbstractBackgroundAnimation';
 import WebJustin from './pages/WebJustin';
 import PhaserJs from './pages/PhaserJs';
 import AutomotiveDesign from './pages/AutomotiveDesign';
+import Rebranding from './pages/Rebranding';
+import RedesignWebsites from './pages/RedesignWebsites';
+import LogoDesign from './pages/LogoDesign';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/tijn" component={Tijn} />
       <Route exact path="/barry" component={Barry} />
+      <Route exact path="/barry/rebranding" component={Rebranding} />
+      <Route exact path="/barry/redesign-websites" component={RedesignWebsites} />
+      <Route exact path="/barry/logo-design" component={LogoDesign} />
       <Route exact path="/kim" component={Kim} />
       <Route exact path="/kim/visual-identity" component={VisualIdentity} />
       <Route exact path="/kim/hand-lettering" component={HandLettering} />

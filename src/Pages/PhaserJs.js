@@ -48,7 +48,7 @@ function PhaserJs() {
 
             <EindResultaat text="De identiteit bestaat it een logo, visitekaartjes, briefpapier, een
              e-mailhandtekening en social media sjablonen. Alle onderdelen van mijn
-            identiteit heb ik samengevoegd in een identity guide." images={[foto1, foto2]}/>
+            identiteit heb ik samengevoegd in een identity guide." images={[foto1, foto2]} links={[{name: "Speel mijn game!", href: "https://jvw17.github.io/BLOK-BREEK-BAM/"}]}/>
             <ImgCarousel images={[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9]}/>
 
             <ReflectieSectie items={[
