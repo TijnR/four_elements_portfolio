@@ -11,9 +11,8 @@ import {LinkItemRedirect} from '../atoms/LinkItem';
 
 const SPara = styled.p`
     color: ${colors.white};
-    margin-top: 0;
-    padding: ${spacing.lg};
-    padding-top: ${spacing.sm};
+    margin: 0;
+    padding: ${spacing.sm};
     max-width: 500px;
     line-height: ${typography.lineHeights.base};
 `
@@ -36,7 +35,7 @@ const SImage = styled.img`
 const LinksContainer = styled.div`
     display: flex;
     flex-direction: column;
-    padding-bottom: ${spacing.md};
+    padding: ${spacing.md} 0;
 
     div{
         padding: none;
@@ -69,7 +68,7 @@ const SquareImage = styled.img`
     opacity: 1;
 `
 
-function EindResultaat({text, images, videos, links, smallImages}) {
+function EindResultaat({text, images, videos, links, smallImages, moreText}) {
     const displayImages = images.map((img, i) => {
         return(
             <ImageContainer key={i}>
@@ -88,6 +87,12 @@ function EindResultaat({text, images, videos, links, smallImages}) {
         )
     })
 
+    const displayMoreText = moreText?.map((item, i) => {
+        return (
+            <SPara key={i+1}>{item}</SPara>
+        )
+    })
+
     const displaySmallImages = smallImages?.map((img, i) => {
         return(
                 <SquareImageContainer key={i}>
@@ -100,7 +105,10 @@ function EindResultaat({text, images, videos, links, smallImages}) {
         <Container bg="black">
             <InnerContainer justifyContent="center" alignItems="center" textAlign="center" flex="column">
             <SpanTitle colorWhite>HET EINDRESULTAAT</SpanTitle>
-            <SPara>{text}</SPara>
+            <SPara key="0">{text}</SPara>
+            {moreText &&
+                displayMoreText
+            }
             {links &&
                 <LinksContainer>
                 {displayLinks}
