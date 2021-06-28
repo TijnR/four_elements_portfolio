@@ -10,17 +10,6 @@ import EindResultaat from '../components/molecules/EindResultaat';
 import ImgCarousel from '../components/organisms/ImgCarousel';
 import ReflectieSectie from '../components/molecules/ReflectieSectie';
 
-
-
-import typeSVideo from '../assets/images/tijn/leerdoelA/typeS-short.mp4'
-import typeSClose from '../assets/images/tijn/leerdoelA/typeS-close.jpg'
-import typeS from '../assets/images/tijn/leerdoelA/types.jpg'
-import dino from '../assets/images/tijn/leerdoelA/dino.jpg'
-import dinoVideo from '../assets/images/tijn/leerdoelA/dino.mp4'
-import cursor from '../assets/images/tijn/leerdoelA/cursor.jpg'
-import timer from '../assets/images/tijn/leerdoelA/timer.jpg'
-
-import upperVideo from '../assets/images/tijn/leerdoelC/tynstrimmed.mp4'
 import upper from '../assets/images/tijn/leerdoelC/site-upper.png'
 import lower from '../assets/images/tijn/leerdoelC/site-lower.png'
 import katana from '../assets/images/tijn/leerdoelC/katana.png'
