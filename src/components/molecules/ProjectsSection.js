@@ -7,13 +7,15 @@ import { container } from '../../theme/container';
 import { Link } from 'react-router-dom';
 import { spacing } from '../../theme/spacing';
 
-import barrySample from '../../assets/images/barry/barry-sample.jpg'
+import barry1 from '../../assets/images/barry/leerdoelA/banner.jpeg'
+import barry2 from '../../assets/images/barry/leerdoelB/veb.jpg'
+import barry3 from '../../assets/images/barry/leerdoelC/design.jpg'
 import justinl1 from '../../assets/images/justin/Leerdoel-1.jpg'
 import justinl2 from '../../assets/images/justin/Leerdoel-2.jpg'
 import justinl3 from '../../assets/images/justin/Leerdoel-3.jpg'
 import kim1 from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
-import kim2 from '../../assets/images/kim/leerdoelB/digital-wordmark.jpg'
-import kimSample from '../../assets/images/kim/kim-sample.jpg'
+import kim2 from '../../assets/images/kim/leerdoelB/quote-small.jpg'
+import kim3 from '../../assets/images/kim/leerdoelC/proces.jpg'
 import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
 
 const InnerContainer = styled.div`
@@ -131,13 +133,13 @@ const ProjectItemBig = ({to, name, index, img}) => {
 
     switch(img) {
         case 1: 
-        source = barrySample
+        source = barry1
         break;
         case 2: 
-        source = barrySample
+        source = barry2
         break;
         case 3: 
-        source = barrySample
+        source = barry3
         break;
         case 4: 
         source = justinl1
@@ -155,7 +157,7 @@ const ProjectItemBig = ({to, name, index, img}) => {
         source = kim2
         break;
         case 9: 
-        source = kimSample
+        source = kim3
         break;
         case 10: 
         source = tijnSample

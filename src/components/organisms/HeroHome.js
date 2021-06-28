@@ -9,9 +9,9 @@ import { spacing } from '../../theme/spacing';
 import { HomeLinkItem } from '../atoms/LinkItem';
 import { ReactComponent as VLines } from '../../assets/icons/v-lines.svg'
 
-import barrySample from '../../assets/images/barry/barry-sample.jpg'
+import barrySample from '../../assets/images/barry/leerdoelC/logo-barifyDesign.jpeg'
 import justinSample from '../../assets/images/justin/homepage.jpg'
-import kimSample from '../../assets/images/kim/kim-sample.jpg'
+import kimSample from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
 import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
 
 import { HeroInner, HeroTextInner, TextContainer, UpperHeader, Header, LinksContainer } from './Hero';
