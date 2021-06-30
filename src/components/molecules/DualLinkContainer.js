@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Container } from '../template/Container';
 import { container } from '../../theme/container';
 import LinkItem from '../atoms/LinkItem'
-import Justin from '../../pages/Justin';
 
 const InnerContainer = styled.div`
     display: flex;
@@ -14,9 +13,9 @@ const InnerContainer = styled.div`
 `
 
 
-function DualLinkContainer({firstName, firstTo, secondName, secondTo, flexStart, bgWhite}) {
+function DualLinkContainer({firstName, firstTo, secondName, secondTo, flexStart, bgWhite, smaller}) {
     return (
-        <Container bg={!bgWhite && "black"} style={{padding: "40px 20"}}>
+        <Container bg={!bgWhite && "black"} style={{padding: "20px"}}>
             <InnerContainer flexStart={flexStart}>
                 { firstName && <LinkItem arrow="left" to={firstTo} just="left" bgWhite={bgWhite}>{firstName}</LinkItem>}
                 { secondName && <LinkItem arrow="right" to={secondTo} just="right" bgWhite={bgWhite}>{secondName}</LinkItem>}

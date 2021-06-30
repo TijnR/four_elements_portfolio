@@ -57,6 +57,7 @@ const TextContainer = styled.div`
     overflow: scroll;
     pointer-events: none;
     padding-right: 100%;
+    scrollbar-width: none;
 
     ::-webkit-scrollbar {
         display: none;

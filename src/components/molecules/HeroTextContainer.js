@@ -21,12 +21,13 @@ const TextTitle = styled.h4`
 const TextPara = styled.p`
     line-height: ${spacing.lg};
     font-size: ${typography.fontSizes.md};
+    margin-top: 0;
 `
 
 
 function HeroTextContainer() {
     return (
-        <Container pv={40}>
+        <Container pv={40} style={{paddingTop: 0}}>
             <InnerTextContainer>
                 <TextContainer>
                     <TextTitle>LEREN. ONTWIKKELEN. TOEPASSEN.</TextTitle>
