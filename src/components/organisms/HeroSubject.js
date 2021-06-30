@@ -9,6 +9,7 @@ import { spacing } from '../../theme/spacing';
 
 import { HeroInner} from './Hero';
 import Video from '../atoms/Video';
+import LazyLoad from 'react-lazy-load';
 
 
 
@@ -60,7 +61,7 @@ function HeroSubject({img, src, title}) {
     return (
         <HeroContainer >
             <ImageContainer>
-                {src ? <SVideo thumb={img} src={src} header/> : <SImage src={img}/> }
+                {src ? <LazyLoad width={'100%'} heigth={'100%'}><SVideo thumb={img} src={src} header/></LazyLoad>   : <SImage src={img}/> }
             </ImageContainer>
             <HeroInner>
                 <STextContainer>
