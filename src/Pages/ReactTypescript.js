@@ -5,9 +5,7 @@ import DualLinkContainer from '../components/molecules/DualLinkContainer';
 import HeroSubject from '../components/organisms/HeroSubject';
 import OverLeerdoel from '../components/molecules/OverLeerdoel';
 import ProcesLane from '../components/molecules/ProcesLane';
-import SectionImage, {SectionImageInline} from '../components/molecules/SectionImage';
 import EindResultaat from '../components/molecules/EindResultaat';
-import ImgCarousel from '../components/organisms/ImgCarousel';
 import ReflectieSectie from '../components/molecules/ReflectieSectie';
 
 
@@ -43,7 +41,7 @@ function ReactTypescript() {
 
             <EindResultaat text="Ik heb de meeste tijd gestopt in het maken van TypeSpeed. Op deze website moet je proberen zo snel mogelijk te typen. Verder is er een leaderboard en kan je jouw eigen highscore terugvinden. Dit concept is volledig uitgewerkt met React en Typescript."
                             moreText={["Tweede link is de bekende dino game, die je te zien krijgt al je geen internet hebt op Chrome. Dit game is met Typescript nagemaakt.", "De laatste link verwijst naar de PWA die ik heb gemaakt met React."]}
-                            links={[{name: "TypeSpeed", href: "https://typespeed.nl/"}, {name: "Dino Game", href:"https://tijnr.github.io/typescript-dino-game/"}, {name: "Timer app", href: "https://tijnr.github.io/timer-app-build/"}]} images={[typeS, dino, cursor, timer]} videos={[ ,dinoVideo]}/>
+                            links={[{name: "TypeSpeed", href: "https://typespeed.nl/"}, {name: "Dino Game", href:"https://tijnr.github.io/typescript-dino-game/"}, {name: "Timer app", href: "https://tijnr.github.io/timer-app-build/"}]} images={[typeS, dino, cursor, timer]} videos={[ null ,dinoVideo]}/>
 
             <ReflectieSectie items={[
                 {title: "HOE KIJK IK EROP TERUG?", text: "Ik zelf bij dat ik met dit leerdoel ben begonnen. Ik kan dit later voor veel andere projecten goed gebruiken en hopelijk biedt dit mij in de toekomst meer werk mogelijkheden. Ik ben erg blij met het resultaat van “TypeSpeed” en heb al veel leuke reacties gekregen. Het is een van de meest complexe websites die ik tot nu toe heb gemaakt. Ik ga steeds meer mogelijkheden zien en krijg meer motivatie om andere interessante concepten uit te werken."},

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, InnerContainer } from '../template/Container'
-import { container } from '../../theme/container';
 
 const ImageContainer = styled.section`
     width: 100%;

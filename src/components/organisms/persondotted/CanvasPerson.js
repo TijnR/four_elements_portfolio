@@ -1,13 +1,8 @@
-import React, {useState, useRef, useEffect, useLocation, useContext} from 'react'
+import React, {useRef, useEffect} from 'react'
 import styled from 'styled-components'
 import WebGLView from './WebGLView';
-import { useHistory } from 'react-router-dom'
 
 class App {
-
-	constructor() {
-
-	}
 
 	init() {
 		this.initWebGL();
@@ -81,9 +76,7 @@ const SCanvas = styled.div`
 `
 
 function CanvasPerson({person}) {
-
 	const canvas = useRef(null)
-	 const history = useHistory() 
 
     useEffect(() => {
         window.app = new App();

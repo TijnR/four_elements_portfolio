@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
-import { spacing } from '../../theme/spacing';
 
 import barry1 from '../../assets/images/barry/leerdoelA/banner.jpeg'
 import barry2 from '../../assets/images/barry/leerdoelB/veb.jpg'
@@ -13,7 +12,6 @@ import justinl3 from '../../assets/images/justin/Leerdoel-3.jpg'
 import kim1 from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
 import kim2 from '../../assets/images/kim/leerdoelB/quote-small.jpg'
 import kim3 from '../../assets/images/kim/leerdoelC/proces.jpg'
-import kimSample from '../../assets/images/kim/kim-sample.jpg'
 import tijn1 from '../../assets/images/tijn/leerdoelA/typeS-close.jpg'
 import tijn2 from '../../assets/images/tijn/leerdoelB/screen7.jpg'
 import tijn3 from '../../assets/images/tijn/leerdoelC/lego.png'
@@ -133,6 +131,9 @@ function ProjectItem({name, projectName, img, to}) {
         case 12: 
         source = tijn3
         break;
+        default:
+        source = tijn3
+        
     }
 
 

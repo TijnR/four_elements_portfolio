@@ -1,11 +1,9 @@
 import 'three';
 import * as THREE from 'three';
-import { TweenLite } from 'gsap/TweenMax';
+
 
 import InteractiveControls from './controls/InteractiveControls';
 import Particles from './particles/Particles';
-
-const glslify = require('glslify');
 
 export default class WebGLView {
 

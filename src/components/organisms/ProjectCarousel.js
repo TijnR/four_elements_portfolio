@@ -1,9 +1,6 @@
 import React, {useState, useRef} from 'react'
 import styled from 'styled-components'
-import { Container, InnerContainer } from '../template/Container';
 import { colors } from '../../theme/colors';
-import { typography } from '../../theme/typography';
-import { spacing } from '../../theme/spacing';
 import ProjectItem from '../molecules/ProjectItem';
 import {listProjects} from '../../data/listItems'
 

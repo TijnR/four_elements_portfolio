@@ -5,7 +5,6 @@ import DualLinkContainer from '../components/molecules/DualLinkContainer';
 import HeroSubject from '../components/organisms/HeroSubject';
 import OverLeerdoel from '../components/molecules/OverLeerdoel';
 import ProcesLane from '../components/molecules/ProcesLane';
-import SectionImage, {SectionImageInline} from '../components/molecules/SectionImage';
 import EindResultaat from '../components/molecules/EindResultaat';
 import ImgCarousel from '../components/organisms/ImgCarousel';
 import ReflectieSectie from '../components/molecules/ReflectieSectie';

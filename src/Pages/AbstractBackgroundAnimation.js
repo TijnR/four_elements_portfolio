@@ -5,16 +5,9 @@ import DualLinkContainer from '../components/molecules/DualLinkContainer';
 import HeroSubject from '../components/organisms/HeroSubject';
 import OverLeerdoel from '../components/molecules/OverLeerdoel';
 import ProcesLane from '../components/molecules/ProcesLane';
-import SectionImage, {SectionImageInline} from '../components/molecules/SectionImage';
+import SectionImage from '../components/molecules/SectionImage';
 import EindResultaat from '../components/molecules/EindResultaat';
 import ReflectieSectie from '../components/molecules/ReflectieSectie';
-
-
-import alfa from '../assets/images/kim/leerdoelB/alfabet_oefenen.jpg'
-import digi from '../assets/images/kim/leerdoelB/digital-wordmark.jpg'
-import quoteSmall from '../assets/images/kim/leerdoelB/quote-small.jpg'
-import quote from '../assets/images/kim/leerdoelB/quoteV1.jpg'
-import toon from '../assets/images/kim/leerdoelB/toomai_mockup.jpg'
 
 import proces from '../assets/images/kim/leerdoelC/proces.jpg'
 import video1 from '../assets/images/kim/leerdoelC/1-Liquid_30sec.mp4'

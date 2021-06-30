@@ -1,23 +1,16 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 import HeroContainer from '../template/HeroContainer';
-import { container } from '../../theme/container';
 import HeroScrollButton from '../molecules/HeroScrollButton';
-import { colors } from '../../theme/colors';
-import { typography } from '../../theme/typography';
-import { spacing } from '../../theme/spacing';
 import { HomeLinkItem } from '../atoms/LinkItem';
 import { ReactComponent as VLines } from '../../assets/icons/v-lines.svg'
 
 import barrySample from '../../assets/images/barry/leerdoelC/logo-barifyDesign.jpeg'
 import justinSample from '../../assets/images/justin/homepage.jpg'
-import kimSample from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
 import kimg from '../../assets/images/kim/kimg.gif'
-import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
 import tijng from '../../assets/images/tijn/tijng.gif'
 
 import { HeroInner, HeroTextInner, TextContainer, UpperHeader, Header, LinksContainer } from './Hero';
-import Video, {VideoHome} from '../atoms/Video';
 
 
 const HeroSvgContainer = styled.div`
@@ -78,21 +71,6 @@ const HeroMedia = styled.img`
     opacity: ${props => props.activeImageIndex === props.id ? 1 : 0};
     pointer-events: none;
 `
-
-const HeroVideo = styled(VideoHome)`
-    height: 100%;
-    object-position: 40% 80%;
-    filter: brightness(0.8);
-    position: absolute; 
-    transition: 300ms ease-out;
-    transition-property: opacity;
-    pointer-events: none;
-    `
-
-
-
-
-
 
 function HeroHome() {    
     const [activeImageIndex, setActiveImageIndex] = useState(0)

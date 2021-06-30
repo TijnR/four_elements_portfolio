@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, InnerTextContainer } from '../template/Container';
-import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
-import { container } from '../../theme/container';
 import { spacing } from '../../theme/spacing';
 import { SpanTitle } from '../atoms/Titles';
 

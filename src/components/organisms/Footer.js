@@ -194,20 +194,6 @@ function Footer() {
         }
     })
 
-    const BackgroundLines = styled.div`
-        position: absolute;
-        right: 0;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        pointer-events: none;
-
-        svg {
-            transform: rotate(292deg) translate3d(403px, 500px, 0);
-        }
-    `
-
-
     return (
         <FootContainer>
             <FootInner>

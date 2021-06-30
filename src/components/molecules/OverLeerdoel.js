@@ -4,7 +4,6 @@ import {Container} from '../template/Container';
 import { container } from '../../theme/container';
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
-import { spacing } from '../../theme/spacing';
 
 const SContainer = styled(Container)`
     background-color: ${colors.grey};

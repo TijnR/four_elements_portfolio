@@ -1,11 +1,8 @@
 import React, {useState, useRef} from 'react'
 import styled from 'styled-components'
-import { colors } from '../../theme/colors';
-import { typography } from '../../theme/typography';
 
 import { ReactComponent as ChevronRight } from '../../assets/icons/chevron-right.svg'
 import { ReactComponent as ChevronLeft } from '../../assets/icons/chevron-left.svg'
-import { spacing } from '../../theme/spacing';
 
 
 const SContainer = styled.section`

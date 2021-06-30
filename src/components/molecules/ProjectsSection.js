@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import { typography } from '../../theme/typography';
 import { colors } from '../../theme/colors';
@@ -46,17 +46,6 @@ width: 100%;
 max-width: 100%;
 max-height: 100%;
 overflow: hidden;   
-
-/* :after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: ${colors.black};
-    opacity: 0.2;
-} */
 `
 
 const SImage = styled.img`
@@ -170,6 +159,8 @@ const ProjectItemBig = ({to, name, index, img}) => {
         case 12: 
         source = tijn3
         break;
+        default:
+        source = tijn3
     }
 
 

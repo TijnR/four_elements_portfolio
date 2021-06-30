@@ -1,11 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import HeroContainer from '../template/HeroContainer';
-import { container } from '../../theme/container';
 import HeroScrollButton from '../molecules/HeroScrollButton';
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
-import { spacing } from '../../theme/spacing';
 
 import { HeroInner} from './Hero';
 import Video from '../atoms/Video';

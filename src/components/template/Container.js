@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { container } from '../../theme/container';
 import { colors } from '../../theme/colors';

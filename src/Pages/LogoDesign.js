@@ -8,7 +8,6 @@ import ProcesLane from '../components/molecules/ProcesLane';
 import EindResultaat from '../components/molecules/EindResultaat';
 import ReflectieSectie from '../components/molecules/ReflectieSectie';
 
-
 import design from '../assets/images/barry/leerdoelC/design.jpg'
 import icf from '../assets/images/barry/leerdoelC/icf-logoDuo.png'
 import kapsalon from '../assets/images/barry/leerdoelC/kapsalonDuo.png'
@@ -16,15 +15,7 @@ import webdiensten from '../assets/images/barry/leerdoelC/logo-webdiensten.png'
 import webdienstenWhite from '../assets/images/barry/leerdoelC/logo-webdiensten-white.png'
 import barifyDesign from '../assets/images/barry/leerdoelC/logo-barifyDesign.jpeg'
 import barifyDesignBlack from '../assets/images/barry/leerdoelC/logo-barify-zwart.jpeg'
-import theniscrewWhite from '../assets/images/barry/leerdoelC/thenicscrew-logo-wit.jpg'
-import theniscrewBlack from '../assets/images/barry/leerdoelC/thenicscrew-logo-zwart.jpg'
 import theniscrewDuo from '../assets/images/barry/leerdoelC/thenicscrew-duo.png'
-
-
-import laptop2 from '../assets/images/barry/leerdoelB/businessparkhaaglanden.jpeg'
-import laptop3 from '../assets/images/barry/leerdoelB/demeester.jpeg'
-import laptop4 from '../assets/images/barry/leerdoelB/residentie.jpeg'
-import laptop5 from '../assets/images/barry/leerdoelB/mobiel.jpeg'
 
 
 function LogoDesign() {

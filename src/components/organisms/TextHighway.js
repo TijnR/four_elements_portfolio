@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import styled, {keyframes} from 'styled-components'
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
@@ -120,9 +120,9 @@ function TextHighway() {
             } else if(i % 2 === 1) {
                 return (<ThickWords key={i}>{topic}<BlueThinkLine>-</BlueThinkLine></ThickWords>)
             }
-        } else {
-            return (<ThinWords key={i}>{topic}</ThinWords>)
         }
+        return (<ThinWords key={i}>{topic}</ThinWords>)
+        
     })
 
     return (

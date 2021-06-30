@@ -84,7 +84,7 @@ function LinkItem({to, children, arrow, underline, size, bgWhite, href}) {
 export function LinkItemRedirect({children, arrow, underline, size, bgWhite, href}) {
     if(arrow === "right") {
         return (
-        <a href={href} style={{zIndex: 5}} target="_blank">
+        <a href={href} style={{zIndex: 5}} target="_blank" rel="noreferrer">
             <LinkContainer underline={underline}>
                 <LinkText size={size} bgWhite={bgWhite}>{children}</LinkText>
                 <IconContainer size={size} style={{marginLeft: '10px'}}><ChevronRight/></IconContainer>
@@ -92,7 +92,7 @@ export function LinkItemRedirect({children, arrow, underline, size, bgWhite, hre
         </a>)
     } else if (arrow === "left") {
         return ( 
-        <a href={href} style={{zIndex: 5}} target="_blank">
+        <a href={href} style={{zIndex: 5}} target="_blank" rel="noreferrer">
             <LinkContainer underline={underline}>
                 <IconContainer size={size} style={{marginRight: '10px'}}><ChevronLeft/></IconContainer>
                 <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
@@ -100,7 +100,7 @@ export function LinkItemRedirect({children, arrow, underline, size, bgWhite, hre
         </a>)
     } else {
         return (
-            <a href={href} style={{zIndex: 5}} target="_blank">
+            <a href={href} style={{zIndex: 5}} target="_blank" rel="noreferrer">
                 <LinkContainer size={size} underline={underline}>
                 <LinkText bgWhite={bgWhite} size={size}>{children}</LinkText>
                 </LinkContainer>
@@ -142,7 +142,7 @@ export function LinkItemRedirect({children, arrow, underline, size, bgWhite, hre
 
 export function InlineLinkItem({children, url}) {
     return(
-    <a href={url} style={{zIndex: 5}} target="_blank">
+    <a href={url} style={{zIndex: 5}} target="_blank" rel="noreferrer">
         <LinkTextInline >{children}</LinkTextInline>
     </a>
     )

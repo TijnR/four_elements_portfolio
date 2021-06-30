@@ -5,20 +5,9 @@ import DualLinkContainer from '../components/molecules/DualLinkContainer';
 import HeroSubject from '../components/organisms/HeroSubject';
 import OverLeerdoel from '../components/molecules/OverLeerdoel';
 import ProcesLane from '../components/molecules/ProcesLane';
-import SectionImage, {SectionImageInline} from '../components/molecules/SectionImage';
 import EindResultaat from '../components/molecules/EindResultaat';
 import ImgCarousel from '../components/organisms/ImgCarousel';
 import ReflectieSectie from '../components/molecules/ReflectieSectie';
-
-
-
-import typeSVideo from '../assets/images/tijn/leerdoelA/typeS-short.mp4'
-import typeSClose from '../assets/images/tijn/leerdoelA/typeS-close.jpg'
-import typeS from '../assets/images/tijn/leerdoelA/types.jpg'
-import dino from '../assets/images/tijn/leerdoelA/dino.jpg'
-import dinoVideo from '../assets/images/tijn/leerdoelA/dino.mp4'
-import cursor from '../assets/images/tijn/leerdoelA/cursor.jpg'
-import timer from '../assets/images/tijn/leerdoelA/timer.jpg'
 
 import thoughtVideo from '../assets/images/tijn/leerdoelB/thoughtsStore.mp4'
 import screen1 from '../assets/images/tijn/leerdoelB/screen1.jpg'
