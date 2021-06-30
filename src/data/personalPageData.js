@@ -50,7 +50,7 @@ export const tijnPersonal = {
         baseUrl: "",
         fullUrl: ""
     },
-    text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
+    text: 'Naast het bouwen van deze website heb ik in deze minor nog veel andere applicaties ontwikkeld. Mijn interesses zijn altijd meer gericht op front-end development en heb met deze leerdoelen mijn richting versterkt. Mijn doel is altijd om iets indrukwekkends te maken en met trots te kunnen laten zien aan vrienden, familie en geïnteresseerde. ',
     leerdoelen: [
         {to: '/tijn/react-typescript', name: 'react & typescript', img: 10},
         {to: '/tijn/ios-development', name: 'IOS Developement', img: 11},

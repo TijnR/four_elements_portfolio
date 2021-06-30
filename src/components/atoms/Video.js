@@ -29,9 +29,9 @@ const Video = ({thumb, src, header}) => {
         width: 100%;
     `
 
-    const SVideoHeader = styled(SVideo)`
+   const SVideoHeader = styled(SVideo)`
         opacity: 0.4;
-        filter: brightness(0.7);
+        filter: brightness(0.7);  
     `
     
 

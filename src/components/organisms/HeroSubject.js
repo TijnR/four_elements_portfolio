@@ -14,6 +14,8 @@ import Video from '../atoms/Video';
 
 const ImageContainer = styled.div`
 position: absolute;
+display: grid;
+place-items: center;
 top: 0;
 height: 0;
 left: 0;
@@ -50,11 +52,15 @@ const SText = styled.h1`
     }
 `
 
+const SVideo = styled(Video)`
+    height: 100%;
+`
+
 function HeroSubject({img, src, title}) {
     return (
         <HeroContainer >
             <ImageContainer>
-                {src ? <Video thumb={img} src={src} header/> : <SImage src={img}/> }
+                {src ? <SVideo thumb={img} src={src} header/> : <SImage src={img}/> }
             </ImageContainer>
             <HeroInner>
                 <STextContainer>

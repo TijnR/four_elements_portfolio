@@ -28,30 +28,26 @@ function ReactTypescript() {
             <Navigation activeIndex={4} activeSubjectIndex={0} activeIcon={4}/>
             <HeroSubject img={typeSClose} src={typeSVideo} title="React & Typescript"/>
             <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn/ios-development" flexStart="right"/>
-            <OverLeerdoel text="Sinds 2017 heb ik mijn eigen bedrijf 'Waart'. Ik heb in de afgelopen jaren allerlei freelance opdrachten
-            uitgevoerd, maar heb nooit de tijd genomen om een identiteit voor mijn bedrijf te ontwerpen. Daarnaast had
-            ik ook nooit nagedacht over wat mijn waardes zijn en wat mij onderscheidt van anderen. Met de gedachte
-            dat ik in de toekomst misschien zou willen uitbreiden en van 'Waart' een studio wil maken, leek het mij super
-            leuk on ti¡dens het eerste blok van de minor een visuele identiteit voor 'Studio Waart' te ontwerpen."
-            rol="Graphic Designer"
-            tools="Illustrator, Indesign, Photoshop, Lightroom"
-            technieken="Graphic Design, Branding"
+            <OverLeerdoel text="In de CMD-omgeving hou ik mij vooral bezig met front-end development. Hiervoor was het voor mij ook noodzakelijk om met een framework aan de gang te gaan. Ik had al eerder is gewerkt met React, maar ik had niet het gevoel dat ik het beheerste. Verder wilde ik ook React gebruiken in combinatie met Typescript omdat dit in grote teams ook veel wordt gebruikt. Daarom heb ik dit blok vooral op deze twee technologieën gefocust, met als doel om deze beiden te beheersen."
+            rol="Front-end Developer"
+            tools="VS Code"
+            technieken="React, Typescript, PWA"
             />
 
             <ProcesLane steps={
-                ["Voordat ik de identiteit kon ontwerpen heb ik een concurrentieanalyse uitgevoerd en moodboard gemaakt.",
-                "Vervolgens heb ik een creative brief voor de studio gemaakt waarin ik mijn warden vastlegde: Modern-innovative / Straightforward / Open minded (to new things / ideas) / Friendly Focussed on detail.",
-                "Met deze warden in gedachte heb ik het logo ontworpen.",
-                "Na het logo volgde de rest van de identiteit, beginnende met de patronen. Elk patroon staat voor één van de diensten van Waart: graphic design, digital design en animatie. Net zoals de diensten vullen de patronen elkaar aan tot een sterker geheel.",
-                "Alle onderdelen van mijn identiteit voegde ik samen in een identity guide."]}/>
+                ["Tutorials en artikels gevolgd over React en Typescript.",
+                "Begonnen met een game maken in typescript.",
+                "Een custom cursor gemaakt met alleen React.",
+                "Een PWA (Progressive Web App) gemaakt met React en Typescript, hierop kan je een timer instellen.",
+                "Ontwikkelen van een groter concept genaamd: “Type-speed”. Deze website is ontwikkeld met React en typescript."]}/>
 
-            <EindResultaat text="De identiteit bestaat it een logo, visitekaartjes, briefpapier, een
-e-mailhandtekening en social media sjablonen. Alle onderdelen van mijn
-identiteit heb ik samengevoegd in een identity guide." images={[typeS, dino, cursor, timer]} videos={[ ,dinoVideo]}/>
+            <EindResultaat text="Ik heb de meeste tijd gestopt in het maken van TypeSpeed. Op deze website moet je proberen zo snel mogelijk te typen. Verder is er een leaderboard en kan je jouw eigen highscore terugvinden. Dit concept is volledig uitgewerkt met React en Typescript."
+                            moreText={["Tweede link is de bekende dino game, die je te zien krijgt al je geen internet hebt op Chrome. Dit game is met Typescript nagemaakt.", "De laatste link verwijst naar de PWA die ik heb gemaakt met React."]}
+                            links={[{name: "TypeSpeed", href: "https://typespeed.nl/"}, {name: "Dino Game", href:"https://tijnr.github.io/typescript-dino-game/"}, {name: "Timer app", href: "https://tijnr.github.io/timer-app-build/"}]} images={[typeS, dino, cursor, timer]} videos={[ ,dinoVideo]}/>
 
             <ReflectieSectie items={[
-                {title: "HOE KIJK IK EROP TERUG?", text: "Ik kijk erg positief terug op het leerdoel. Deze minor was voor mij de ideale kans om mij een keer echt te verdiepen in het maken van een visuele identiteit. Dus niet gewoon iets moois maken, maar echt iets ontwerpen met een gedachte erachter. Door mij goed aan mijn planning te houden ben ik niet tegen grote problemen aangelopen bij dit leerdoel. Mijn manier van werken tijdens dit leerdoel he ik zeker doorgezet bij de andere leerdoelen."},
-                {title: "WAT HEB IK GELEERD?", text: "Na verschillende cursussen over visual identity's te volgen heb ik veel geleerd over de stappen die je moet zetten om tot goed een eindresultaat. Door van verschillende designers te horen wat hun strategie is kon ik de beste punten combineren tot een strategie die voor mij werkt. Daarnaast heb ik super veel geleerd over logo design. Ik heb namelijk ook een logo cursus gevolgd waarbij ik veel theorie leerde over logo's en illustrator een stuk beter leerde kennen."}
+                {title: "HOE KIJK IK EROP TERUG?", text: "Ik zelf bij dat ik met dit leerdoel ben begonnen. Ik kan dit later voor veel andere projecten goed gebruiken en hopelijk biedt dit mij in de toekomst meer werk mogelijkheden. Ik ben erg blij met het resultaat van “TypeSpeed” en heb al veel leuke reacties gekregen. Het is een van de meest complexe websites die ik tot nu toe heb gemaakt. Ik ga steeds meer mogelijkheden zien en krijg meer motivatie om andere interessante concepten uit te werken."},
+                {title: "WAT HEB IK GELEERD?", text: "Naast de nieuwe Syntax die ik heb geleerd was het ook nog een uitdaging om in te schatten hoe ik het blok het best kon aanpakken. Ik heb naar mijn gevoel te lang besteed aan tutorials en kon eigenlijk al eerder beginnen met het maken van nieuwe projecten. Het blijft altijd een moeilijke inschatting, maar deze twee technologieën waren voor mijn niet compleet nieuw. Als ik in de toekomst een nieuwe framework ga leren, dan zal ik minder tijd besteden aan het volgen van video’s en meer aan gewoon doen."}
                 ]}/>
 
             <DualLinkContainer  secondName="Leerdoel 2" secondTo="/kim/hand-lettering" flexStart="right" bgWhite/>

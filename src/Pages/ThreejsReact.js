@@ -23,36 +23,31 @@ function ThreejsReact() {
         <>
             <Navigation activeIndex={4} activeSubjectIndex={2} activeIcon={4}/>
             <HeroSubject img={lower} title="Three.js & React-three-fiber"/>
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn/ios-development" flexStart="right"/>
-            <OverLeerdoel text="Sinds 2017 heb ik mijn eigen bedrijf 'Waart'. Ik heb in de afgelopen jaren allerlei freelance opdrachten
-            uitgevoerd, maar heb nooit de tijd genomen om een identiteit voor mijn bedrijf te ontwerpen. Daarnaast had
-            ik ook nooit nagedacht over wat mijn waardes zijn en wat mij onderscheidt van anderen. Met de gedachte
-            dat ik in de toekomst misschien zou willen uitbreiden en van 'Waart' een studio wil maken, leek het mij super
-            leuk on ti¡dens het eerste blok van de minor een visuele identiteit voor 'Studio Waart' te ontwerpen."
-            rol="Graphic Designer"
-            tools="Illustrator, Indesign, Photoshop, Lightroom"
-            technieken="Graphic Design, Branding"
+            <DualLinkContainer firstName="Leerdoel 2" firstTo="/tijn/ios-development"/>
+            <OverLeerdoel text="De laatste par jaren zag ik steeds meer 3d elementen op sites. Ik was hier heel erg onder de indruk en zou geen idee hebben hoe je zoiets kon maken. Toen krijg ik van een senior collega te horen dat die elementen voornamelijk gemaakt zijn met “THREE.js”. Zonder enige twijfel wist ik waar ik mij dit blok op wilde focussen."
+            rol="3D Graphics & Front-end Developer"
+            tools="VSCode, threejs.org/editor"
+            technieken="Three.js, WebGl, React-Three-Fiber"
             />
 
             <ProcesLane steps={
-                ["Voordat ik de identiteit kon ontwerpen heb ik een concurrentieanalyse uitgevoerd en moodboard gemaakt.",
-                "Vervolgens heb ik een creative brief voor de studio gemaakt waarin ik mijn warden vastlegde: Modern-innovative / Straightforward / Open minded (to new things / ideas) / Friendly Focussed on detail.",
-                "Met deze warden in gedachte heb ik het logo ontworpen.",
-                "Na het logo volgde de rest van de identiteit, beginnende met de patronen. Elk patroon staat voor één van de diensten van Waart: graphic design, digital design en animatie. Net zoals de diensten vullen de patronen elkaar aan tot een sterker geheel.",
-                "Alle onderdelen van mijn identiteit voegde ik samen in een identity guide."]}/>
+                ["“three.js journey” Course aangeschaft van Bruno Simon en verschillende lessen gevolgd.",
+                "“Katana” Concept uitgewerkt. Op deze pagina wordt een verhaal verteld wanneer je scrolled.",
+                "Leren omgaan met React-Three-Fiber en geleerd hoe je gltf/glb files kan omzetten naar gltfjsx.",
+                "Laatste twee weken besteed aan het maken van een website met daarin 3d elementen. Dit heb ik gedaan met React-Three-Fiber.",
+                ]}/>
 
 
             <SectionImageInline img={spiral}/>
-            <EindResultaat text="De identiteit bestaat it een logo, visitekaartjes, briefpapier, een
-e-mailhandtekening en social media sjablonen. Alle onderdelen van mijn
-identiteit heb ik samengevoegd in een identity guide." images={[upper, lower, katana]}/>
+            <EindResultaat text="De eerste website genaamd: “Tyns Therapeutics” is ontworpen met React-Three-Fiber en bezit twee interactieve 3d elementen. Ik heb alleen maar één pagina, dus alle link verwijzen naar mijn linkedin."
+            moreText={["De tweede website genaamd: “Katana” is ontworpen met alleen Three.js. Ik heb hier niet langer dan twee dagen aan gezeten, maar wil toch het resultaat laten zien. "]} links={[{name: "Tyns Therapeutics", href: "https://tyns-therapeutics.web.app/"}, {name:"Katana", href:"https://katana-showcase.web.app/"}]} images={[upper, lower, katana]}/>
 
             <ReflectieSectie items={[
-                {title: "HOE KIJK IK EROP TERUG?", text: "Ik kijk erg positief terug op het leerdoel. Deze minor was voor mij de ideale kans om mij een keer echt te verdiepen in het maken van een visuele identiteit. Dus niet gewoon iets moois maken, maar echt iets ontwerpen met een gedachte erachter. Door mij goed aan mijn planning te houden ben ik niet tegen grote problemen aangelopen bij dit leerdoel. Mijn manier van werken tijdens dit leerdoel he ik zeker doorgezet bij de andere leerdoelen."},
-                {title: "WAT HEB IK GELEERD?", text: "Na verschillende cursussen over visual identity's te volgen heb ik veel geleerd over de stappen die je moet zetten om tot goed een eindresultaat. Door van verschillende designers te horen wat hun strategie is kon ik de beste punten combineren tot een strategie die voor mij werkt. Daarnaast heb ik super veel geleerd over logo design. Ik heb namelijk ook een logo cursus gevolgd waarbij ik veel theorie leerde over logo's en illustrator een stuk beter leerde kennen."}
+                {title: "HOE KIJK IK EROP TERUG?", text: "Dit vond ik toch wel het leukst om aan te werken. Deze periode had ik de eerste 2 weken besteed aan het ontdekken van deze nieuwe stof. De andere weken heb ik volledig besteed aan het maken wat kleinere en één groter project. Web3d vind ik zelf super interessant en wil zeker in de toekomst hier verder mee werken. Het is alsof er een hele nieuwe wereld mogelijk is. Elke website die gebruikt maakt van web3d ziet er indrukwekkend uit en geeft altijd goede reacties. Ook al is de accessibility niet goed, mij lijkt het wel een perfecte kans om nieuwe showcasewebsites te maken."},
+                {title: "WAT HEB IK GELEERD?", text: "De wereld van 3d renderen was voor mij compleet nieuw. Deze nieuwe wereld maakte mij heel nieuwsgierig en ben nog steeds verbaast van de mogelijkheden. Zelf aan het einde van dit blok heb ik zin om nieuwe 3d websites te ontwikkelen. 3D elementen op het web worden steeds populairder en wil hier graan aan meewerken. Toch is het vaak een afweging die je moet maken. Het kost namelijk zeker wat performance van de computer en zal daarom ook niet soepel werken op elk apparaat. Performance is het genen waar je altijd aan moet denken in het ontwerpen van 3d elementen. Vaak duurt het langer om een site te laden en kost het de computer meer moeite, dit heeft voor de gebruiker dus niet altijd een positief effect. Lossen 3d elementen op een normale webpagina is naar mijn mening de perfecte combinatie om een website goed te laten werken en tegelijkertijd een indrukwekkende website te maken."}
                 ]}/>
 
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/kim/hand-lettering" flexStart="right" bgWhite/>
+            <DualLinkContainer  firstName="Leerdoel 2" firstTo="/tijn/ios-development" bgWhite/>
             <Footer/>
         </>
         

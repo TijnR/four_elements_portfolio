@@ -16,7 +16,9 @@ import justinl3 from '../../assets/images/justin/Leerdoel-3.jpg'
 import kim1 from '../../assets/images/kim/leerdoelA/kaartjes-mockup.jpg'
 import kim2 from '../../assets/images/kim/leerdoelB/quote-small.jpg'
 import kim3 from '../../assets/images/kim/leerdoelC/proces.jpg'
-import tijnSample from '../../assets/images/tijn/tijn-sample.jpg'
+import tijn1 from '../../assets/images/tijn/leerdoelA/typeS-close.jpg'
+import tijn2 from '../../assets/images/tijn/leerdoelB/screen7.jpg'
+import tijn3 from '../../assets/images/tijn/leerdoelC/lego.png'
 
 const InnerContainer = styled.div`
     display: flex;
@@ -160,13 +162,13 @@ const ProjectItemBig = ({to, name, index, img}) => {
         source = kim3
         break;
         case 10: 
-        source = tijnSample
+        source = tijn1
         break;
         case 11: 
-        source = tijnSample
+        source = tijn2
         break;
         case 12: 
-        source = tijnSample
+        source = tijn3
         break;
     }
 

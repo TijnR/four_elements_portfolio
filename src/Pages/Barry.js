@@ -12,7 +12,7 @@ function Barry() {
             <Navigation activeIndex={1} activeIcon={1}/>
             <PersonalHero name={barryPersonal.name} prof={barryPersonal.prof} text={barryPersonal.text} leerdoelen={barryPersonal.leerdoelen} person="kim"/>
             <ProjectsSection leerdoelen={barryPersonal.leerdoelen}/>
-            <DualLinkContainer firstName="Justin van Wijk" firstTo="/justin" secondName="Tijn Roozen" secondTo="/tijn"/>
+            <DualLinkContainer secondName="Justin van Wijk" secondTo="/justin" firstName="Tijn Roozen" firstTo="/tijn"/>
             <Footer/>
         </>
     )

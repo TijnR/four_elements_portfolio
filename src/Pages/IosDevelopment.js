@@ -39,35 +39,29 @@ function IosDevelopment() {
         <>
             <Navigation activeIndex={4} activeSubjectIndex={1} activeIcon={4}/>
             <HeroSubject img={screen1} src={thoughtVideo} title="IOS Development"/>
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn/ios-development" flexStart="right"/>
-            <OverLeerdoel text="Sinds 2017 heb ik mijn eigen bedrijf 'Waart'. Ik heb in de afgelopen jaren allerlei freelance opdrachten
-            uitgevoerd, maar heb nooit de tijd genomen om een identiteit voor mijn bedrijf te ontwerpen. Daarnaast had
-            ik ook nooit nagedacht over wat mijn waardes zijn en wat mij onderscheidt van anderen. Met de gedachte
-            dat ik in de toekomst misschien zou willen uitbreiden en van 'Waart' een studio wil maken, leek het mij super
-            leuk on ti¡dens het eerste blok van de minor een visuele identiteit voor 'Studio Waart' te ontwerpen."
-            rol="Graphic Designer"
-            tools="Illustrator, Indesign, Photoshop, Lightroom"
-            technieken="Graphic Design, Branding"
+            <DualLinkContainer firstName="Leerdoel 1" firstTo="/tijn/react-typescript" secondName="Leerdoel 3" secondTo="/tijn/threejs-react"/>
+            <OverLeerdoel text="Vroeger was het voor mij altijd al een droom om zelf apps te maken. In het verleden heb ik kort gewerkt met Androidstudio en was het toen gelukt om een “boter kaas en eieren” game te maken. Nu ik zelf volledig ben overgestapt naar Apple kreeg ik steeds meer interesse om zelf IOS-apps te maken. Mij leek daarom de perfecte tijd om het gewoon te proberen en mijn droom van vroeger te beleven."
+            rol="iOS Developer"
+            tools="XCode, SF Symbols"
+            technieken="Swift, SwiftUI, ARKit, CoreData"
             />
 
             <ProcesLane steps={
-                ["Voordat ik de identiteit kon ontwerpen heb ik een concurrentieanalyse uitgevoerd en moodboard gemaakt.",
-                "Vervolgens heb ik een creative brief voor de studio gemaakt waarin ik mijn warden vastlegde: Modern-innovative / Straightforward / Open minded (to new things / ideas) / Friendly Focussed on detail.",
-                "Met deze warden in gedachte heb ik het logo ontworpen.",
-                "Na het logo volgde de rest van de identiteit, beginnende met de patronen. Elk patroon staat voor één van de diensten van Waart: graphic design, digital design en animatie. Net zoals de diensten vullen de patronen elkaar aan tot een sterker geheel.",
-                "Alle onderdelen van mijn identiteit voegde ik samen in een identity guide."]}/>
+                ["Begonnen met het kijken naar de documentatie van Swift en SwiftUI, daarna een paar tutorial gevolgd.",
+                "Zelf wat experimenten doen met SwiftUI.",
+                "Eerst App ontwikkeld! Dit was een Pokedex, om de eerst 151 Pokemons te kunnen zien met wat data.",
+                "Geprobeerd om een AR-app te maken met behulp van ARKit. Uiteindelijk had ik iets gemaakt, maar had besloten om die niet in het eindproduct te gebruiken.",
+                "Uitwerken van een uiteindelijk concept genaamd: “Thoughts Store”. Hiervoor moest ik gebruik maken van CoreData. Hiermee is het mogelijk om data op te slaan als de user de app afsluit."]}/>
 
-            <EindResultaat text="De identiteit bestaat it een logo, visitekaartjes, briefpapier, een
-            e-mailhandtekening en social media sjablonen. Alle onderdelen van mijn
-            identiteit heb ik samengevoegd in een identity guide." images={[screen7, screen4]}/>
+            <EindResultaat text="Ik heb in deze periode verschillende app kunnen maken. Hieronder laat ik de app zien waar ik het meest trots op ben." images={[screen7, screen4]}/>
             <ImgCarousel images={[screen1, screen2, screen3, screen4, screen5, screen6, screen7]}/>
 
             <ReflectieSectie items={[
-                {title: "HOE KIJK IK EROP TERUG?", text: "Ik kijk erg positief terug op het leerdoel. Deze minor was voor mij de ideale kans om mij een keer echt te verdiepen in het maken van een visuele identiteit. Dus niet gewoon iets moois maken, maar echt iets ontwerpen met een gedachte erachter. Door mij goed aan mijn planning te houden ben ik niet tegen grote problemen aangelopen bij dit leerdoel. Mijn manier van werken tijdens dit leerdoel he ik zeker doorgezet bij de andere leerdoelen."},
-                {title: "WAT HEB IK GELEERD?", text: "Na verschillende cursussen over visual identity's te volgen heb ik veel geleerd over de stappen die je moet zetten om tot goed een eindresultaat. Door van verschillende designers te horen wat hun strategie is kon ik de beste punten combineren tot een strategie die voor mij werkt. Daarnaast heb ik super veel geleerd over logo design. Ik heb namelijk ook een logo cursus gevolgd waarbij ik veel theorie leerde over logo's en illustrator een stuk beter leerde kennen."}
+                {title: "HOE KIJK IK EROP TERUG?", text: "Ik vond het heel interessant om weer iets anders te programmeren dan websites. Apps maken vind ik nog steeds leuk en wil in de toekomst nog meer creëren. Het maken was wel zeker een uitdaging, werken met ARKit en CoreData gingen mij nog niet zo makkelijk af. Het was allemaal vrij nieuwe stof en heb veel nieuwe dingen geprobeerd. De app kan je niet terugvinden op de Apple store want dat vind ik toch te duur voor een klein project. Ik ben blij dat ik dit gedaan heb en kijk er naar uit om het in de toekomst weer op te pakken."},
+                {title: "WAT HEB IK GELEERD?", text: "Een nieuwe programmeertaal leren had ik zelf een beetje onderschat. Swift gebruikt voornamelijk Object Oriented Programming en dat was lang geleden dat ik dit gebruikt heb. SwiftUI was daarentegen makkelijk om mee te beginnen en hiermee kon ik al snel een app in elkaar zetten. Naar mijn gevoel heb ik in dit blok te weinig tijd besteed aan het leren van Swift, hierdoor ben ik vaak vast gaan lopen bij het maken van nieuwe apps. In nieuwe programmeertaal is niet te vergelijken met een nieuw framework. Dit moet ik in de toekomst dus niet onderschatten."}
                 ]}/>
 
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/kim/hand-lettering" flexStart="right" bgWhite/>
+            <DualLinkContainer  firstName="Leerdoel 1" firstTo="/tijn/react-typescript" secondName="Leerdoel 3" secondTo="/tijn/threejs-react" bgWhite/>
             <Footer/>
         </>
         
