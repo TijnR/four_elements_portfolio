@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, InnerContainer } from '../template/Container'
-import { container } from '../../theme/container';
 import { colors } from '../../theme/colors';
 import { typography } from '../../theme/typography';
 import { spacing } from '../../theme/spacing';
