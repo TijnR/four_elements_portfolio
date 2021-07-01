@@ -5,8 +5,8 @@ import HeroScrollButton from '../molecules/HeroScrollButton';
 import { HomeLinkItem } from '../atoms/LinkItem';
 import { ReactComponent as VLines } from '../../assets/icons/v-lines.svg'
 
-import barrySample from '../../assets/images/barry/leerdoelC/logo-barifyDesign.jpeg'
-import justinSample from '../../assets/images/justin/homepage.jpg'
+import barryg from '../../assets/images/barry/gif-barry.gif'
+import justing from '../../assets/images/justin/gif-justin.gif'
 import kimg from '../../assets/images/kim/kimg.gif'
 import tijng from '../../assets/images/tijn/tijng.gif'
 
@@ -105,8 +105,8 @@ function HeroHome() {
             </HeroSvgContainer>
             <HeroMediaContainer>
                 <HeroInnerMedia>
-                    <HeroMedia activeImageIndex={activeImageIndex} id={1} src={barrySample}/>
-                    <HeroMedia activeImageIndex={activeImageIndex} id={2} src={justinSample}/>
+                    <HeroMedia activeImageIndex={activeImageIndex} id={1} src={barryg}/>
+                    <HeroMedia activeImageIndex={activeImageIndex} id={2} src={justing}/>
                     <HeroMedia activeImageIndex={activeImageIndex} id={3} src={kimg}/>
                     <HeroMedia activeImageIndex={activeImageIndex} id={4} src={tijng} />
                 </HeroInnerMedia>
