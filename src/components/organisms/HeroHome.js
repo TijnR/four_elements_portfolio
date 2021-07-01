@@ -5,8 +5,8 @@ import HeroScrollButton from '../molecules/HeroScrollButton';
 import { HomeLinkItem } from '../atoms/LinkItem';
 import { ReactComponent as VLines } from '../../assets/icons/v-lines.svg'
 
-import barryg from '../../assets/images/barry/gif-barry.gif'
-import justing from '../../assets/images/justin/gif-justin.gif'
+import barryg from '../../assets/images/barry/barryg.gif'
+import justing from '../../assets/images/justin/justing.gif'
 import kimg from '../../assets/images/kim/kimg.gif'
 import tijng from '../../assets/images/tijn/tijng.gif'
 
