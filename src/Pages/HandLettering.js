@@ -13,6 +13,7 @@ import ReflectieSectie from '../components/molecules/ReflectieSectie';
 import alfa from '../assets/images/kim/leerdoelB/alfabet_oefenen.jpg'
 import digi from '../assets/images/kim/leerdoelB/digital-wordmark.jpg'
 import quoteSmall from '../assets/images/kim/leerdoelB/quote-small.jpg'
+import quotewide from '../assets/images/kim/leerdoelB/quote-small-wide.jpg'
 import quote from '../assets/images/kim/leerdoelB/quoteV1.jpg'
 import toon from '../assets/images/kim/leerdoelB/toomai_mockup.jpg'
 
@@ -22,7 +23,7 @@ function HandLettering() {
         
         <>
             <Navigation activeIndex={3} activeSubjectIndex={1} activeIcon={3}/>
-            <HeroSubject img={quote} title="Hand lettering"/>
+            <HeroSubject img={quotewide} title="Hand lettering"/>
             <DualLinkContainer firstName="Leerdoel 1" firstTo="/kim/visual-identity" secondName="Leerdoel 3" secondTo="/kim/abstract-background-animation"/>
             <OverLeerdoel text="In het verleden liep ik er tijdens het ontwerpen van een logo wel eens tegen aan dat ik letters niet goed kon
                                 tekenen. Een idee die ik in mijn hood had kon ik niet goed vertalen naar papier. Het leek mij daarom tof om

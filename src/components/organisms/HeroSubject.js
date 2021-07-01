@@ -25,7 +25,7 @@ overflow: hidden;
 `
 
 const SImage = styled.img`
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     opacity: 0.4;
