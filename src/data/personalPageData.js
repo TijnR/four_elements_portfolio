@@ -5,7 +5,7 @@ export const barryPersonal = {
         baseUrl: "",
         fullUrl: ""
     },
-    text: 'Tijdens de minor KB-86 aan De Haagse Hogeschool werkten de vier studenten uit deze projectgroep ieder aan drie individuele leerdoelen.  Zij startten hiermee een nieuwe persoonlijke ontwikkeling om hun vaardigheden en technieke.',
+    text: 'Tijdens de minor visual design & front-end development heb ik mij 2 weken gefocust op 3 leerdoelen. Deze leerdoelen stonden vooral in het teken van grafisch ontwerp, ux design, branding en webdesign. Met deze leerdoelen heb ik geleerd om verschillende UX & UI technieken toe te passen in mijn ontwerp om zo tot betere producten te komen.',
     leerdoelen: [
         {to: '/barry/rebranding', name: 'Rebranding', img: 1},
         {to: '/barry/redesign-websites', name: 'Redesign Websites', img: 2},

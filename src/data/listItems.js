@@ -29,13 +29,13 @@ export const listProjects = [
     {name: "tijn roozen", projectName: "React & Typescript", to: '/tijn/react-typescript', img: 10},
 
     {name: "barry boogert", projectName: "Redesign Websites", to: '/barry/redesign-websites', img: 2},
-    {name: "justin van wijk", projectName: "Phaser.js", to: '/justin/web-3d', img: 5},
+    {name: "justin van wijk", projectName: "Phaser.js", to: '/justin/phaserjs', img: 5},
     {name: "kim van der waart", projectName: "Hand Lettering", to: '/kim/hand-lettering', img: 8},
-    {name: "tijn roozen", projectName: "IOS Developement", to: '/tijn/react-typescript', img: 11},
+    {name: "tijn roozen", projectName: "IOS Developement", to: '/tijn/ios-development', img: 11},
 
     {name: "barry boogert", projectName: "Logo Design", to: '/barry/logo-design', img: 3},
-    {name: "justin van wijk", projectName: "Automotive Design", to: '/justin/web-3d', img: 6},
-    {name: "kim van der waart", projectName: "Abstract Background Animation", to: '/kim/visual-identity', img: 9},
-    {name: "tijn roozen", projectName: "Three.js & React-Three-Fiber", to: '/tijn/react-typescript', img: 12},
+    {name: "justin van wijk", projectName: "Automotive Design", to: '/justin/automotive-design', img: 6},
+    {name: "kim van der waart", projectName: "Abstract Background Animation", to: '/kim/abstract-background-animation', img: 9},
+    {name: "tijn roozen", projectName: "Three.js & React-Three-Fiber", to: '/tijn/threejs-react', img: 12},
 
 ]

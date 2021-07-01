@@ -38,7 +38,7 @@ function AutomotiveDesign() {
         
         <>
             <Navigation activeIndex={2} activeSubjectIndex={2} activeIcon={2}/>
-            <HeroSubject img={fold} title="Phaser.js"/>
+            <HeroSubject img={fold} title="Automotive Design"/>
             <DualLinkContainer firstName="Leerdoel 2" firstTo="/justin/phaserjs"/>
             <OverLeerdoel text="Het leek mij geweldig om mijn designkennis te combineren met mijn grootste hobby: auto’s. Daarom kwam ik op het toffe idee om twee MVP interfaces te ontwerpen voor een auto. Ik heb twee soorten schermen gemaakt: een infoscherm en een multimediascherm. Het infoscherm is het scherm dat pal voor de bestuurder staat en algemene informatie over het voertuig toont, zoals snelheid. Het multimediascherm is het scherm dat zich in het midden van het dashboard bevindt. Deze bevat de volgende functies: navigatie, muziek én telefoneren. Beide soorten schermen heb ik interactief gemaakt."
             rol="Researcher / Visual Designer"
@@ -60,7 +60,7 @@ function AutomotiveDesign() {
             moreText={[
                 "Heb je het infoscherm geopend? Druk op de Q-toets om van scherm te wisselen.",
                 "Heb je het interactieve multimediascherm geopend? Sliders werken door erop te klikken. De radio/bluetooth balk kan je van boven naar onderen slepen. Met de A- en D-toetsen kan je wisselen van radiozender. Met de S-toets kan je het volume veranderen. Probeer op zoveel mogelijk dingen te klikken om eracter te komen of het werkt."
-            ]} images={[foto2, foto3]} links={[{name: "Interactief infoscherm", href: "https://xd.adobe.com/view/a4cc64d9-a507-4828-91bc-9b33911f7590- f19f/?fullscreen&hints=off"}, {name: "Niet-interactief multimediascherm", href: "https://xd.adobe.com/view/80b3ba1a-5181-49ec-b218-71c1d78fd163-d5e0/"}, {name: "Interactief multimediascherm", href:"https://xd.adobe.com/view/64a4b780-a33b-43cd-80b8-322fb4c10ec0-31f7/?fullscreen&hints=off"}]}/>
+            ]} images={[foto2, foto3]} links={[{name: "Interactief infoscherm", href: "https://xd.adobe.com/view/a4cc64d9-a507-4828-91bc-9b33911f7590-f19f/?fullscreen&hints=off"}, {name: "Niet-interactief multimediascherm", href: "https://xd.adobe.com/view/80b3ba1a-5181-49ec-b218-71c1d78fd163-d5e0/"}, {name: "Interactief multimediascherm", href:"https://xd.adobe.com/view/64a4b780-a33b-43cd-80b8-322fb4c10ec0-31f7/?fullscreen&hints=off"}]}/>
             <ImgCarousel images={[slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14, slide15]}/>
 
             <ReflectieSectie items={[
@@ -68,7 +68,7 @@ function AutomotiveDesign() {
                 {title: "WAT HEB IK GELEERD?", text: "Ik weet nu met welke tientallen factoren rekening gehouden moet worden tijdens het ontwerpen van een auto-interface (Safety and usability before beauty). Denk bijvoorbeeld aan de lettergrootte, hoeveel contrast de kleuren moeten hebben, welke handgebaren gemakkelijk uit te voeren zijn, en op welke plekken knoppen geplaatst moeten worden. Ook heb ik geleerd hóe ik een dark mode design kan maken en waar ik op moet letten. Denk bijvoorbeeld aan hóe diepte aangebracht kan worden m.b.v. ‘elevation’ én dat lichte tinten kleuren gebruikt moeten worden."}
                 ]}/>
 
-            <DualLinkContainer firstName="Leerdoel 1" firstTo="/justin/web-3d" secondName="Leerdoel 3" secondTo="/justin/automotive-design" bgWhite/>
+            <DualLinkContainer firstName="Leerdoel 2" firstTo="/justin/phaserjs" bgWhite/>
             <Footer/>
         </>
         

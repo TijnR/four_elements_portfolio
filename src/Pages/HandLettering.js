@@ -49,7 +49,7 @@ function HandLettering() {
                 {title: "WAT HEB IK GELEERD?", text: "Ik heb geleerd hoe je door het tekenen van basis vormen steeds comfortabeler wordt met het tekenen van letters. Ook heb ik veel geleerd over de tools die je kan gebruiken bij hand lettering. Dan heb ik het niet alleen over potlood, pen en papier, maar ook tools in illustrator. Ten slotte heb ik verschillende methodes geleerd over hoe je het beste een quote, logo en wordmark kan ontwerpen."}
                 ]}/>
 
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn" flexStart="right" bgWhite/>
+            <DualLinkContainer  firstName="Leerdoel 1" firstTo="/kim/visual-identity" secondName="Leerdoel 3" secondTo="/kim/abstract-background-animation" bgWhite/>
             <Footer/>
         </>
         

@@ -48,7 +48,7 @@ function ReactTypescript() {
                 {title: "WAT HEB IK GELEERD?", text: "Naast de nieuwe Syntax die ik heb geleerd was het ook nog een uitdaging om in te schatten hoe ik het blok het best kon aanpakken. Ik heb naar mijn gevoel te lang besteed aan tutorials en kon eigenlijk al eerder beginnen met het maken van nieuwe projecten. Het blijft altijd een moeilijke inschatting, maar deze twee technologieën waren voor mijn niet compleet nieuw. Als ik in de toekomst een nieuwe framework ga leren, dan zal ik minder tijd besteden aan het volgen van video’s en meer aan gewoon doen."}
                 ]}/>
 
-            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/kim/hand-lettering" flexStart="right" bgWhite/>
+            <DualLinkContainer  secondName="Leerdoel 2" secondTo="/tijn/ios-development" flexStart="right" bgWhite/>
             <Footer/>
         </>
         
