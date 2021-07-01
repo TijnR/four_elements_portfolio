@@ -20,7 +20,7 @@ const ImageContainer = styled.section`
     width: 100%;
     height: auto;
     min-height: 100%;
-    margin: ${spacing.xl} 0;
+    margin-top: ${props => props.first ? "80px" : "40px"};
     overflow: hidden;   
 `
 
@@ -45,8 +45,7 @@ const ImageGridContainer = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
+    margin-top: 80px;
 `
 
 const SquareImageContainer = styled.div`
@@ -70,7 +69,7 @@ const SquareImage = styled.img`
 function EindResultaat({text, images, videos, links, smallImages, moreText}) {
     const displayImages = images.map((img, i) => {
         return(
-            <ImageContainer key={i}>
+            <ImageContainer key={i} first={i === 0 ? true : false}>
                 {videos && videos[i] ? <Video thumb={img} src={videos[i]}/> : <SImage src={img}/> }
             </ImageContainer>
         )

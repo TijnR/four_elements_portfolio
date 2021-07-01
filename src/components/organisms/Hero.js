@@ -37,7 +37,7 @@ export const UpperHeader = styled.h3`
 export const Header = styled.h1`
     color: ${colors.white};
     font-size: ${typography.fontSizes.header};
-    line-height: 1.3;
+    line-height: 1.2;
     margin: ${spacing.md} 0;
 
     span {
